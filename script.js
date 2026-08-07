@@ -67,3 +67,41 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// Mobile Hamburger Menu Toggle
+(function() {
+    var hamburger = document.getElementById('hamburger');
+    var navMenu = document.querySelector('.nav-menu');
+    if (!hamburger || !navMenu) return;
+
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('open');
+        navMenu.classList.toggle('open');
+        document.body.style.overflow = navMenu.classList.contains('open') ? 'hidden' : '';
+    });
+
+    // Close menu when a top-level link is clicked (non-dropdown)
+    document.querySelectorAll('.nav-links > li > a').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            var parent = this.closest('li');
+            var megaMenu = parent.querySelector('.mega-menu');
+            if (megaMenu) {
+                e.preventDefault();
+                parent.classList.toggle('open');
+            } else {
+                hamburger.classList.remove('open');
+                navMenu.classList.remove('open');
+                document.body.style.overflow = '';
+            }
+        });
+    });
+
+    // Close on resize to desktop
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 900) {
+            hamburger.classList.remove('open');
+            navMenu.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+    });
+})();
