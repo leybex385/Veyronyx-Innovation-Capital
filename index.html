@@ -19,7 +19,7 @@
         content="An early-stage innovation and investment platform focused on sustainable energy, industrial modernization, and technology-driven transformation.">
     <meta name="twitter:image" content="./preview.png">
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Inter:wght@400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -28,32 +28,102 @@
 
 <body>
     <nav class="navbar">
-        <div class="nav-container">
+        <div class="nav-container" style="padding: 0 4rem; position: relative;">
             <div class="nav-brand">
-                <div class="nav-logo-icon"
-                    style="background: transparent; border: none; padding: 0; margin-right: 0.5rem; display: flex; align-items: center;">
-                    <img src="1785860252242a.png" alt="Veyronyx Logo"
-                        style="height: 32px; width: auto; object-fit: contain;">
-                </div>
-                <div class="logo">Veyronyx Innovation Capital</div>
+                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+                    <div class="nav-logo-icon" style="background: transparent; border: none; padding: 0; margin-right: 0.5rem; display: flex; align-items: center;">
+                        <img src="1785860252242a.png" alt="Veyronyx Logo" style="height: 32px; width: auto; object-fit: contain;">
+                    </div>
+                    <div class="logo" style="color: #0f172a;">Veyronyx Innovation Capital</div>
+                </a>
             </div>
             <div class="nav-menu">
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#approach">Our Approach</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul class="nav-links" style="display:flex; align-items:center;">
+                    <li style="position:relative;"><a href="index.html" class="active">Overview</a></li>
+                    
+                    <li style="position:relative;">
+                        <a href="about.html" class="">Company <i class="fas fa-chevron-down" style="font-size:0.75rem;margin-left:4px;"></i></a>
+                        <div class="mega-menu" style="left:50%; transform:translateX(-50%); width:300px; justify-content:flex-start; padding:2rem; border-radius:0 0 12px 12px;">
+                            <div class="mega-column" style="width: 100%;">
+                                <h4>Veyronyx Platform</h4>
+                                <ul>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="why.html">Why Veyronyx</a></li>
+                                    <li><a href="philosophy.html">Investment Philosophy</a></li>
+                                    <li><a href="careers.html">Careers & Leadership</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li style="position:relative;">
+                        <a href="focus.html" class="">Investment Focus <i class="fas fa-chevron-down" style="font-size:0.75rem;margin-left:4px;"></i></a>
+                        <div class="mega-menu" style="left:50%; transform:translateX(-50%); width:800px; padding:3rem; border-radius:0 0 12px 12px;">
+                            <div class="mega-column">
+                                <h4>Deep Tech</h4>
+                                <ul>
+                                    <li><a href="focus.html#ai">Artificial Intelligence</a></li>
+                                    <li><a href="focus.html#blockchain">Blockchain<br>Infrastructure</a></li>
+                                    <li><a href="focus.html#enterprise-software">Enterprise Software</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h4>Industrial</h4>
+                                <ul>
+                                    <li><a href="focus.html#smart-mfg">Smart<br>Manufacturing</a></li>
+                                    <li><a href="focus.html#energy">Energy Technology</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h4>Ecosystems</h4>
+                                <ul>
+                                    <li><a href="focus.html#healthcare">Healthcare Innovation</a></li>
+                                    <li><a href="focus.html#fintech">FinTech</a></li>
+                                    <li><a href="focus.html#digital-assets">Digital Assets</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li style="position:relative;"><a href="portfolio.html" class="">Portfolio</a></li>
+                    
+                    <li style="position:relative;">
+                        <a href="insights.html" class="">Insights & Resources <i class="fas fa-chevron-down" style="font-size:0.75rem;margin-left:4px;"></i></a>
+                        <div class="mega-menu" style="left:50%; transform:translateX(-50%); width:300px; justify-content:flex-start; padding:2rem; border-radius:0 0 12px 12px;">
+                            <div class="mega-column" style="width: 100%;">
+                                <h4>Intelligence</h4>
+                                <ul>
+                                    <li><a href="insights.html">News & Insights</a></li>
+                                    <li><a href="esg.html">ESG Practices</a></li>
+                                    <li><a href="resources.html">Resources Center</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div class="secondary-nav">
+        <div class="secondary-nav-container">
+            <a href="index.html#about">Vision & Mission</a>
+            <a href="index.html#portfolio">Global Markets</a>
+            <a href="index.html#approach">Our Approach</a>
+            <a href="index.html#contact">Contact Us</a>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
 
     <!-- Hero Section -->
-    <header class="hero" id="home">
-        <video autoplay muted loop playsinline class="hero-bg-video">
-            <source src="2cc4b8a9-4e84-4ccd-8194-53813514f9bd.mp4" type="video/mp4">
-        </video>
+        <header class="hero" id="home">
+        <!-- Replaced moving video with a static background image image matching Qualcomm style -->
+        <div class="hero-bg-image" style="background-image: url('premium_hero.png'); background-size: cover; background-position: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; filter: blur(4px); transform: scale(1.02);"></div>
+        <!-- Tint overlay to ensure text readability -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.4); z-index: -1;"></div>
         <div class="hero-content">
             <h1 class="hero-title fade-in">We invest in innovation that shapes the future of industry</h1>
             <p class="hero-subtitle slide-up">Veyronyx Innovation Capital is an early-stage innovation and investment
@@ -127,102 +197,61 @@
         </div>
     </section>
 
-    <!-- Full Bleed Bento Layout replacing standard sections -->
-    <section id="portfolio" class="bento-section">
-        <div class="bento-grid">
-            <!-- Row 1: 2/3 (Left) - 1/3 (Right stacked) -->
-            <div class="bento-item span-2-rows" style="text-align: center;">
-                <video autoplay muted loop playsinline>
-                    <source src="market-video.mp4.mp4" type="video/mp4">
-                </video>
-                <div class="bento-overlay"></div>
-                <div class="bento-content fade-in-scroll">
-                    <h3>Market Scale</h3>
-                    <p style="font-weight: 600; margin-bottom: 5px;">Emerging Industry Potential</p>
-                    <p style="font-size: 0.85rem;">The global industrial market continues to expand and establish new
-                        infrastructure, driven by artificial intelligence automation, and digital manufacturing growing
-                        rapidly. The total market size is essentially projected to reach trillions of dollars.</p>
+    <!-- Enterprise Multi-Column Layout replacing Bento grids -->
+    <section id="portfolio" style="padding: 7rem 0; background: #fff;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-family: 'Montserrat', sans-serif; font-size: 2.5rem; color: #0f172a; font-weight: 700;">Global Markets & Scaling Models</h2>
+                <p style="font-family: 'Inter', sans-serif; color: #64748b; font-size: 1.15rem; max-width: 800px; margin: 1rem auto 0 auto;">The global industrial market continues to expand and establish new infrastructure. We evaluate deep-tech opportunities scaling across key global regions.</p>
+            </div>
+
+            <!-- Single Feature Split -->
+            <div class="split-layout">
+                <div class="split-content">
+                    <h3 style="font-family: 'Montserrat', sans-serif; font-size: 2rem; color: #0f172a; font-weight: 700; margin-bottom: 1.5rem;">Technological Innovation Impacts</h3>
+                    <p style="font-family: 'Inter', sans-serif; color: #475569; font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">Veyronyx Innovation Capital invests in high-tolerance businesses serving the intersection of bleeding edge deep tech and massive global industrial application. North America leads in industrial AI and robotics, while Asia-Pacific shows the fastest growth due to government priorities in supply chain restructuring.</p>
+                    <a href="focus.html" class="enterprise-link">Explore our investment sectors <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="split-image">
+                    <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);">
+                        <source src="startup-video.mp4.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
 
-            <div class="bento-item">
-                <video autoplay muted loop playsinline>
-                    <source src="regional-video.mp4.mp4" type="video/mp4">
-                </video>
-                <div class="bento-overlay"></div>
-                <div class="bento-content fade-in-scroll">
-                    <h3>Regional Market Variations</h3>
-                    <p style="font-size: 0.8rem;">North America leads in industrial AI, robotics, and advanced energy.
-                        Asia-Pacific shows the fastest growth due to government priorities in supply chain
-                        restructuring.</p>
+            <!-- 3 Column Grid -->
+            <div class="enterprise-grid">
+                <div class="enterprise-card">
+                    <img src="project_zero.png" alt="Project Zero">
+                    <div class="enterprise-card-content">
+                        <h3>Project Zero Carbon</h3>
+                        <p>Spearheading an exclusive  internal project dedicated to funding zero-carbon heavy manufacturing incubators across North America and Asia-Pacific.</p>
+                        <a href="#" class="enterprise-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="bento-item">
-                <video autoplay muted loop playsinline>
-                    <source src="segment-video.mp4.mp4" type="video/mp4">
-                </video>
-                <div class="bento-overlay"></div>
-                <div class="bento-content fade-in-scroll">
-                    <h3>Segment-Specific Opportunities</h3>
-                    <p style="font-size: 0.8rem;">Within the broader market of modernization, the sub-sectors
-                        representing the highest potential return on investment include smart manufacturing robotics.
-                    </p>
+                <div class="enterprise-card">
+                    <video autoplay muted loop playsinline style="width:100%; height:250px; object-fit:cover; margin-bottom:1.5rem;">
+                        <source src="energy-video.mp4.mp4" type="video/mp4">
+                    </video>
+                    <div class="enterprise-card-content">
+                        <h3>Sustainable Energy</h3>
+                        <p>Projected scalable value in renewable energy platforms, accelerating the transition to next-gen electrical frameworks.</p>
+                        <a href="focus.html" class="enterprise-link">View scaling models <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Row 2: 2/3 (Left) - 1/3 (Right stacked) -->
-            <div class="bento-item span-2-rows">
-                <video autoplay muted loop playsinline>
-                    <source src="startup-video.mp4.mp4" type="video/mp4">
-                </video>
-                <div class="bento-overlay"></div>
-                <div class="bento-content fade-in-scroll" style="text-align: left; width: 100%; padding: 0 10%;">
-                    <h3 style="font-size: 2.2rem; margin-bottom:1rem;">What the Startup Does</h3>
-                    <p style="text-align: left; max-width: 100%;">Technological Innovation Impacts<br>Veyronyx
-                        Innovation Capital invests in high-tolerance businesses serving the intersection of bleeding
-                        edge deep tech and massive global industrial application.</p>
-                </div>
-            </div>
-
-            <div class="bento-item">
-                <video autoplay muted loop playsinline>
-                    <source src="energy-video.mp4.mp4" type="video/mp4">
-                </video>
-                <div class="bento-overlay"></div>
-                <div class="bento-content fade-in-scroll">
-                    <h3>Sustainable Energy</h3>
-                    <p style="font-size: 0.8rem;">Projected scalable value in renewable energy platforms, accelerating
-                        the transition to next-gen electrical frameworks.</p>
-                </div>
-            </div>
-
-            <div class="bento-item">
-                <video autoplay muted loop playsinline>
-                    <source src="healthcare -video.mp4.mp4" type="video/mp4">
-                </video>
-                <div class="bento-overlay"></div>
-                <div class="bento-content fade-in-scroll">
-                    <h3>Healthcare Innovation Projects</h3>
-                    <p style="font-size: 0.8rem;">Veyronyx is heavily focused on globally expanding healthcare
-                        initiatives, digital biotech modeling, and rapid medtech advancements.</p>
-                </div>
-            </div>
-
-            <!-- Row 3: Full width banner bottom -->
-            <div class="bento-item span-2-cols" style="padding: 4rem;">
-                <img src="project_zero.png" alt="Project Zero Carbon Manufacturing">
-                <div class="bento-overlay"></div>
-                <div class="bento-content fade-in-scroll">
-                    <h3>Project Zero Carbon</h3>
-                    <p style="margin-bottom: 2rem;">Spearheading an exclusive $100M internal project dedicated to
-                        funding zero-carbon heavy manufacturing incubators across North America and Asia-Pacific.</p>
-                    <a href="#contact" class="submit-button"
-                        style="text-decoration:none; background: #fff; color: #111; padding: 1rem 2.5rem;">Join the
-                        Initiative</a>
+                <div class="enterprise-card">
+                    <video autoplay muted loop playsinline style="width:100%; height:250px; object-fit:cover; margin-bottom:1.5rem;">
+                        <source src="healthcare -video.mp4.mp4" type="video/mp4">
+                    </video>
+                    <div class="enterprise-card-content">
+                        <h3>Healthcare Innovation</h3>
+                        <p>Globally expanding healthcare initiatives, digital biotech modeling, and rapid medtech advancements focused on predictable outcomes.</p>
+                        <a href="focus.html" class="enterprise-link">Discover more <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
         <!-- Veyronyx Approach Section (Minimalist Typography) -->
         <section class="stats-section fade-in-scroll" id="approach" style="margin-top: 4rem; padding-top: 4rem;">
             <div class="container text-left" style="max-width: 1200px;">
@@ -341,7 +370,7 @@
                             Corporate HQ</h3>
                         <p
                             style="color: #94a3b8; font-size: 1rem; line-height: 1.7; font-family: 'Inter', sans-serif; margin: 0;">
-                            415 Mission St<br>San Francisco, CA 94105<br>United States</p>
+                            181 Fremont St<br>San Francisco, CA 94105<br>United States</p>
                     </div>
 
                     <!-- Card 2 -->
@@ -356,8 +385,7 @@
                             General Support</h3>
                         <p
                             style="color: #94a3b8; font-size: 1rem; line-height: 1.7; font-family: 'Inter', sans-serif; margin: 0;">
-                            For inquiries & partnerships:<br><a href="mailto:Support@veyronyxinnovationcapital.com"
-                                style="color: #fff; text-decoration: none; font-weight: 500; margin-top: 0.5rem; display: inline-block; font-size: 0.95rem; text-decoration: underline; text-underline-offset: 4px; text-decoration-color: rgba(255,255,255,0.2);">Support@veyronyx...</a>
+                            For inquiries & partnerships:<br><span style="color: #fff; font-weight: 500; margin-top: 0.5rem; display: inline-block; font-size: 0.95rem; word-break: break-all;">support@veyronyxsinocapitals.capital</span>
                         </p>
                     </div>
 
@@ -373,8 +401,7 @@
                             Direct Contact</h3>
                         <p
                             style="color: #94a3b8; font-size: 1rem; line-height: 1.7; font-family: 'Inter', sans-serif; margin: 0;">
-                            Connect with lead operators:<br><a href="mailto:lina@veyronyxinnovationcapital.net"
-                                style="color: #fff; text-decoration: none; font-weight: 500; margin-top: 0.5rem; display: inline-block; font-size: 0.95rem; text-decoration: underline; text-underline-offset: 4px; text-decoration-color: rgba(255,255,255,0.2);">lina@veyronyx...</a>
+                            Connect with lead operators:<br><span style="color: #fff; font-weight: 500; margin-top: 0.5rem; display: inline-block; font-size: 0.95rem; word-break: break-all;">lina@veyronyxsinocapitals.capital</span>
                         </p>
                     </div>
                 </div>
@@ -382,16 +409,65 @@
         </section>
 
         <!-- Footer -->
-        <footer class="site-footer" style="padding: 2rem 0; background: #fff; border-top: 1px solid #eee;">
-            <div class="container footer-flex" style="display:flex; justify-content:space-between; align-items:center;">
-                <div class="footer-brand" style="font-weight:700;">VEYRONYX</div>
-                <div class="footer-copy" style="font-size:0.85rem; color:#666;">&copy; 2026 Veyronyx Innovation Capital.
-                    All
-                    Rights Reserved.</div>
+            <footer class="site-footer" style="padding: 3rem 0 1rem; background: #fff; border-top: 1px solid #e2e8f0;">
+        <div class="container footer-flex" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; margin-bottom: 2rem;">
+            <div class="footer-brand" style="margin-bottom: 2rem; min-width: 250px;">
+                <div style="font-weight:700; font-size:1.5rem; color:#0f172a; margin-bottom: 1rem;"><img src="1785860252242a.png" style="height:24px; vertical-align:middle; margin-right:8px;"> VEYRONYX</div>
+                <p style="font-size:0.9rem; color:#64748b; line-height:1.6; max-width: 300px;">An early-stage innovation and investment platform focused on sustainable energy, industrial modernization, and deep tech.</p>
             </div>
-        </footer>
+            
+            <div style="display: flex; gap: 4rem; flex-wrap:wrap;">
+                <div class="footer-col">
+                    <h4 style="font-family:'Montserrat', sans-serif; font-size:1rem; font-weight:700; color:#0f172a; margin-bottom: 1rem;">Platform</h4>
+                    <ul style="list-style:none; padding:0; line-height:2;">
+                        <li><a href="about.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">About Us</a></li>
+                        <li><a href="portfolio.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Portfolio</a></li>
+                        <li><a href="careers.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 style="font-family:'Montserrat', sans-serif; font-size:1rem; font-weight:700; color:#0f172a; margin-bottom: 1rem;">Intelligence</h4>
+                    <ul style="list-style:none; padding:0; line-height:2;">
+                        <li><a href="focus.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Investment Focus</a></li>
+                        <li><a href="insights.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Market Research</a></li>
+                        <li><a href="resources.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Resource Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 style="font-family:'Montserrat', sans-serif; font-size:1rem; font-weight:700; color:#0f172a; margin-bottom: 1rem;">Legal & Compliance</h4>
+                    <ul style="list-style:none; padding:0; line-height:2;">
+                        <li><a href="compliance.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Privacy Policy</a></li>
+                        <li><a href="compliance.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Terms of Use</a></li>
+                        <li><a href="compliance.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">AML & KYC Policy</a></li>
+                        <li><a href="compliance.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Risk Disclosure</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="border-top:1px solid #f1f5f9; padding-top: 1rem; text-align:center;">
+            <div class="footer-copy" style="font-size:0.85rem; color:#94a3b8;">&copy; 2026 Veyronyx Innovation Capital. All Rights Reserved. Not a solicitation for securities.</div>
+        </div>
+    </footer>
 
         <script src="script.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
