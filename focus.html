@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Focus | Veyronyx Innovation Capital</title>
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Investment Focus | Veyronyx Innovation Capital">
+    <meta property="og:description"
+        content="Dedicated areas of interest including AI, Blockchain, Digital Assets, Energy Tech and more.">
+    <meta property="og:image" content="./preview.png">
+    <meta property="og:url" content="https://veyronyx-innovation-capital.com/focus.html">
+    <meta property="og:type" content="website">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="1785860252242a.png">
+    <style>
+        .sector-list { display: flex; flex-direction: column; gap: 4rem; margin-top: 4rem; }
+
+                .sector-item {
+            position: relative;
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            display: flex; flex-direction: row; align-items: center; gap: 4rem; padding: 2rem; border-radius: 16px; background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%); border: 1px solid rgba(226, 232, 240, 0.8); box-shadow: 0 8px 25px -4px rgba(15, 23, 42, 0.05); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); overflow: hidden; z-index: 1;
+        }
+
+        .sector-item::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.03) 0%, rgba(37, 99, 235, 0) 100%);
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .sector-item:hover::before {
+            opacity: 1;
+        }
+
+        .sector-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px -10px rgba(37, 99, 235, 0.15);
+            border-color: rgba(37, 99, 235, 0.3);
+        }
+
+        
+
+
+            .sector-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .sector-text {
+            flex: 1;
+        }
+        .sector-img { 
+            width: 45%; 
+            min-width: 300px;
+            max-width: 500px;
+            height: 300px; 
+            object-fit: cover; 
+            border-radius: 12px; 
+            margin-bottom: 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+            transition: transform 0.4s ease; 
+        }
+        .sector-item:hover .sector-img { 
+            transform: scale(1.02); 
+            box-shadow: 0 12px 30px rgba(0,0,0,0.1); 
+        }
+        .sector-item h3 {
+            font-size: 1.75rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: #1e293b;
+        }
+        .sector-item p {
+            font-size: 1.1rem;
+            color: #475569;
+            line-height: 1.7;
+            margin: 0;
+        }
+        @media (max-width: 900px) {
+            .sector-item {
+                flex-direction: column !important;
+                gap: 2rem;
+            }
+            .sector-img {
+                width: 100%;
+                max-width: none;
+                height: 250px;
+            }
+            .sector-text {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container" style="padding: 0 4rem; position: relative;">
+            <div class="nav-brand">
+                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+                    <div class="nav-logo-icon" style="background: transparent; border: none; padding: 0; margin-right: 0.5rem; display: flex; align-items: center;">
+                        <img src="1785860252242a.png" alt="Veyronyx Logo" style="height: 32px; width: auto; object-fit: contain;">
+                    </div>
+                    <div class="logo" style="color: #0f172a;">Veyronyx Innovation Capital</div>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-links" style="display:flex; align-items:center;">
+                    <li style="position:relative;"><a href="index.html" class="">Overview</a></li>
+                    
+                    <li style="position:relative;">
+                        <a href="about.html" class="">Company <i class="fas fa-chevron-down" style="font-size:0.75rem;margin-left:4px;"></i></a>
+                        <div class="mega-menu" style="left:50%; transform:translateX(-50%); width:300px; justify-content:flex-start; padding:2rem; border-radius:0 0 12px 12px;">
+                            <div class="mega-column" style="width: 100%;">
+                                <h4>Veyronyx Platform</h4>
+                                <ul>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="why.html">Why Veyronyx</a></li>
+                                    <li><a href="philosophy.html">Investment Philosophy</a></li>
+                                    <li><a href="careers.html">Careers & Leadership</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li style="position:relative;">
+                        <a href="focus.html" class="active">Investment Focus <i class="fas fa-chevron-down" style="font-size:0.75rem;margin-left:4px;"></i></a>
+                        <div class="mega-menu" style="left:50%; transform:translateX(-50%); width:800px; padding:3rem; border-radius:0 0 12px 12px;">
+                            <div class="mega-column">
+                                <h4>Deep Tech</h4>
+                                <ul>
+                                    <li><a href="focus.html#ai">Artificial Intelligence</a></li>
+                                    <li><a href="focus.html#blockchain">Blockchain<br>Infrastructure</a></li>
+                                    <li><a href="focus.html#enterprise-software">Enterprise Software</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h4>Industrial</h4>
+                                <ul>
+                                    <li><a href="focus.html#smart-mfg">Smart<br>Manufacturing</a></li>
+                                    <li><a href="focus.html#energy">Energy Technology</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h4>Ecosystems</h4>
+                                <ul>
+                                    <li><a href="focus.html#healthcare">Healthcare Innovation</a></li>
+                                    <li><a href="focus.html#fintech">FinTech</a></li>
+                                    <li><a href="focus.html#digital-assets">Digital Assets</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li style="position:relative;"><a href="portfolio.html" class="">Portfolio</a></li>
+                    
+                    <li style="position:relative;">
+                        <a href="insights.html" class="">Insights & Resources <i class="fas fa-chevron-down" style="font-size:0.75rem;margin-left:4px;"></i></a>
+                        <div class="mega-menu" style="left:50%; transform:translateX(-50%); width:300px; justify-content:flex-start; padding:2rem; border-radius:0 0 12px 12px;">
+                            <div class="mega-column" style="width: 100%;">
+                                <h4>Intelligence</h4>
+                                <ul>
+                                    <li><a href="insights.html">News & Insights</a></li>
+                                    <li><a href="esg.html">ESG Practices</a></li>
+                                    <li><a href="resources.html">Resources Center</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="secondary-nav">
+        <div class="secondary-nav-container">
+            <a href="index.html#about">Vision & Mission</a>
+            <a href="index.html#portfolio">Global Markets</a>
+            <a href="index.html#approach">Our Approach</a>
+            <a href="index.html#contact">Contact Us</a>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <header class="page-hero bg-focus">
+        <div class="container">
+            <h1>Investment Focus</h1>
+            <p>Identifying businesses with durable technologies, scalable models, and long-term strategic potential.</p>
+        </div>
+    </header>
+
+    <section class="content-section fade-in-scroll">
+        <div class="container">
+            <div style="text-align: center; max-width: 800px; margin: 0 auto 4rem auto;">
+                <h2>Our Key Areas of Interest</h2>
+                <p>We evaluate deep-tech opportunities across multiple industries, prioritizing scalable ventures that
+                    address profound structural challenges and modernization gaps.</p>
+            </div>
+
+            <div class="sector-list">
+                <!-- AI -->
+                <div class="sector-item" id="ai" style="scroll-margin-top: 100px;">
+                    <img src="bg_tech.png" class="sector-img" alt="Artificial Intelligence">
+                    <div class="sector-text"><h3>Artificial Intelligence</h3>
+                    <p>Backing foundational AI models, industrial automation platforms, AI-driven drug discovery, and
+                        enterprise intelligence systems bridging human-machine interaction.</p></div>
+                </div>
+                <!-- Blockchain -->
+                <div class="sector-item" id="blockchain" style="scroll-margin-top: 100px;">
+                    <img src="bg_focus.png" class="sector-img" alt="Blockchain">
+                    <div class="sector-text"><h3>Blockchain Infrastructure</h3>
+                    <p>Supporting next-generation layer validation networks, zero-knowledge proofs, and secure
+                        decentralized infrastructure enabling seamless global capital flow.</p></div>
+                </div>
+                <!-- Digital Assets -->
+                <div class="sector-item" id="digital-assets" style="scroll-margin-top: 100px;">
+                    <img src="parallax-bg.png" class="sector-img" alt="Digital Assets">
+                    <div class="sector-text"><h3>Digital Assets</h3>
+                    <p>Investments targeting institutional-grade custodianship, programmable assets, tokenized
+                        real-world securities, and compliant exchange models.</p></div>
+                </div>
+                <!-- Energy Tech -->
+                <div class="sector-item" id="energy" style="scroll-margin-top: 100px;">
+                    <img src="project_zero.png" class="sector-img" alt="Energy Technology">
+                    <div class="sector-text"><h3>Energy Technology</h3>
+                    <p>Funding the transition to next-gen electrical frameworks, zero-carbon heavy manufacturing, and
+                        sustainable renewable energy grids.</p></div>
+                </div>
+                <!-- Healthcare -->
+                <div class="sector-item" id="healthcare" style="scroll-margin-top: 100px;">
+                    <img src="premium_hero.png" class="sector-img" alt="Healthcare">
+                    <div class="sector-text"><h3>Healthcare Innovation</h3>
+                    <p>Accelerating globally expanding healthcare initiatives, digital biotech modeling, hyper-localized
+                        medtech advancements, and precision health data.</p></div>
+                </div>
+                <!-- Smart Manufacturing -->
+                <div class="sector-item" id="smart-mfg" style="scroll-margin-top: 100px;">
+                    <img src="bg_portfolio.png" class="sector-img" alt="Smart Manufacturing">
+                    <div class="sector-text"><h3>Smart Manufacturing</h3>
+                    <p>Empowering robotics, IoT logistics, automated supply chain restructuring, and deep tech enabling
+                        scalable and predictable production lines.</p></div>
+                </div>
+                <!-- Enterprise Software -->
+                <div class="sector-item" id="enterprise-software" style="scroll-margin-top: 100px;">
+                    <img src="bg_about.png" class="sector-img" alt="Enterprise Software">
+                    <div class="sector-text"><h3>Enterprise Software</h3>
+                    <p>Seeking resilient B2B scalable software architectures, operational data aggregators, and workflow
+                        automation that form industry backbones.</p></div>
+                </div>
+                <!-- Cybersecurity -->
+                <div class="sector-item" id="cybersecurity" style="scroll-margin-top: 100px;">
+                    <img src="bg_insights.png" class="sector-img" alt="Cybersecurity">
+                    <div class="sector-text"><h3>Cybersecurity</h3>
+                    <p>Investing in predictive threat modeling, decentralized identity solutions, and military-grade
+                        defensive models protecting complex organizational grids.</p></div>
+                </div>
+                <!-- FinTech -->
+                <div class="sector-item" id="fintech" style="scroll-margin-top: 100px;">
+                    <img src="bg_advisors.png" class="sector-img" alt="FinTech">
+                    <div class="sector-text"><h3>FinTech</h3>
+                    <p>Advancing multi-currency payment rails, credit decisioning logic, democratized financial hubs,
+                        and embedded financial infrastructure APIs.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+        <footer class="site-footer" style="padding: 3rem 0 1rem; background: #fff; border-top: 1px solid #e2e8f0;">
+        <div class="container footer-flex" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; margin-bottom: 2rem;">
+            <div class="footer-brand" style="margin-bottom: 2rem; min-width: 250px;">
+                <div style="font-weight:700; font-size:1.5rem; color:#0f172a; margin-bottom: 1rem;"><img src="1785860252242a.png" style="height:24px; vertical-align:middle; margin-right:8px;"> VEYRONYX</div>
+                <p style="font-size:0.9rem; color:#64748b; line-height:1.6; max-width: 300px;">An early-stage innovation and investment platform focused on sustainable energy, industrial modernization, and deep tech.</p>
+            </div>
+            
+            <div style="display: flex; gap: 4rem; flex-wrap:wrap;">
+                <div class="footer-col">
+                    <h4 style="font-family:'Montserrat', sans-serif; font-size:1rem; font-weight:700; color:#0f172a; margin-bottom: 1rem;">Platform</h4>
+                    <ul style="list-style:none; padding:0; line-height:2;">
+                        <li><a href="about.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">About Us</a></li>
+                        <li><a href="portfolio.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Portfolio</a></li>
+                        <li><a href="careers.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 style="font-family:'Montserrat', sans-serif; font-size:1rem; font-weight:700; color:#0f172a; margin-bottom: 1rem;">Intelligence</h4>
+                    <ul style="list-style:none; padding:0; line-height:2;">
+                        <li><a href="focus.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Investment Focus</a></li>
+                        <li><a href="insights.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Market Research</a></li>
+                        <li><a href="resources.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Resource Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 style="font-family:'Montserrat', sans-serif; font-size:1rem; font-weight:700; color:#0f172a; margin-bottom: 1rem;">Legal & Compliance</h4>
+                    <ul style="list-style:none; padding:0; line-height:2;">
+                        <li><a href="compliance.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Privacy Policy</a></li>
+                        <li><a href="compliance.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Terms of Use</a></li>
+                        <li><a href="compliance.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">AML & KYC Policy</a></li>
+                        <li><a href="compliance.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Risk Disclosure</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="border-top:1px solid #f1f5f9; padding-top: 1rem; text-align:center;">
+            <div class="footer-copy" style="font-size:0.85rem; color:#94a3b8;">&copy; 2026 Veyronyx Innovation Capital. All Rights Reserved. Not a solicitation for securities.</div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

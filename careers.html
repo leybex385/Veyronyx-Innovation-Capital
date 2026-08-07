@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers & Leadership | Veyronyx Innovation Capital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Specific Styles for Careers Accordion Layout */
+                .careers-header {
+            background-color: #0f172a;
+            padding: 8rem 2rem 5rem 2rem;
+            text-align: center;
+            color: #fff;
+        }
+        .careers-header.bg-about {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.82), rgba(15, 23, 42, 0.95)), url('bg_about.png');
+            background-size: cover;
+            background-position: center 40%;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .careers-header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+        .careers-header p {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.15rem;
+            max-width: 900px;
+            margin: 0 auto 1.5rem auto;
+            line-height: 1.7;
+            font-weight: 500;
+        }
+        
+        .careers-board-card {
+            background-color: #0b1320;
+            max-width: 1000px;
+            margin: -3rem auto 4rem auto;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            padding: 3rem;
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 10;
+        }
+        .careers-board-card .logo-area {
+            flex: 1;
+            text-align: center;
+            border-right: 1px solid rgba(255,255,255,0.1);
+            padding-right: 2rem;
+        }
+        .careers-board-card .info-area {
+            flex: 2;
+            padding-left: 3rem;
+            text-align: left;
+        }
+        .careers-board-card h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .careers-board-card p {
+            color: rgba(255,255,255,0.7);
+            font-family: 'Inter', sans-serif;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+        .careers-board-card .btn-view-roles {
+            background-color: #1a2744;
+            color: #fff;
+            border: 1px solid #2e4476;
+            padding: 0.75rem 1.5rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .careers-board-card .btn-view-roles:hover {
+            background-color: #2563eb;
+            border-color: #2563eb;
+        }
+
+        .accordion-section {
+            background-color: #111111;
+            color: #fff;
+            padding: 5rem 2rem;
+            min-height: 50vh;
+        }
+        .accordion-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .accordion-header-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .accordion-subtitle {
+            font-family: 'Inter', sans-serif;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 3rem;
+            font-size: 1rem;
+        }
+        .accordion-item {
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+        .accordion-item:last-child {
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+        .accordion-btn {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+            background: transparent;
+            border: none;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            text-align: left;
+        }
+        .accordion-btn i {
+            transition: transform 0.3s ease;
+        }
+        .accordion-btn.active i {
+            transform: rotate(180deg);
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            font-family: 'Inter', sans-serif;
+            color: rgba(255,255,255,0.8);
+        }
+        .accordion-content-inner {
+            padding: 0 0 2rem 0;
+        }
+        .accordion-content h4 {
+            color: #fff;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .accordion-content ul {
+            padding-left: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+        .accordion-content ul li {
+            margin-bottom: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar placeholder, replaced by script -->
+    
+    <nav class="navbar">
+        <div class="nav-container" style="padding: 0 4rem; position: relative;">
+            <div class="nav-brand">
+                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+                    <div class="nav-logo-icon" style="background: transparent; border: none; padding: 0; margin-right: 0.5rem; display: flex; align-items: center;">
+                        <img src="1785860252242a.png" alt="Veyronyx Logo" style="height: 32px; width: auto; object-fit: contain;">
+                    </div>
+                    <div class="logo" style="color: #0f172a;">Veyronyx Innovation Capital</div>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-links" style="display:flex; align-items:center;">
+                    <li style="position:relative;"><a href="index.html" class="">Overview</a></li>
+                    
+                    <li style="position:relative;">
+                        <a href="about.html" class="active">Company <i class="fas fa-chevron-down" style="font-size:0.75rem;margin-left:4px;"></i></a>
+                        <div class="mega-menu" style="left:50%; transform:translateX(-50%); width:300px; justify-content:flex-start; padding:2rem; border-radius:0 0 12px 12px;">
+                            <div class="mega-column" style="width: 100%;">
+                                <h4>Veyronyx Platform</h4>
+                                <ul>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="why.html">Why Veyronyx</a></li>
+                                    <li><a href="philosophy.html">Investment Philosophy</a></li>
+                                    <li><a href="careers.html" style="color:#2563eb;">Careers & Leadership</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li style="position:relative;">
+                        <a href="focus.html" class="">Investment Focus <i class="fas fa-chevron-down" style="font-size:0.75rem;margin-left:4px;"></i></a>
+                        <div class="mega-menu" style="left:50%; transform:translateX(-50%); width:800px; padding:3rem; border-radius:0 0 12px 12px;">
+                            <div class="mega-column">
+                                <h4>Deep Tech</h4>
+                                <ul>
+                                    <li><a href="focus.html#ai">Artificial Intelligence</a></li>
+                                    <li><a href="focus.html#blockchain">Blockchain<br>Infrastructure</a></li>
+                                    <li><a href="focus.html#enterprise-software">Enterprise Software</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h4>Industrial</h4>
+                                <ul>
+                                    <li><a href="focus.html#smart-mfg">Smart<br>Manufacturing</a></li>
+                                    <li><a href="focus.html#energy">Energy Technology</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h4>Ecosystems</h4>
+                                <ul>
+                                    <li><a href="focus.html#healthcare">Healthcare Innovation</a></li>
+                                    <li><a href="focus.html#fintech">FinTech</a></li>
+                                    <li><a href="focus.html#digital-assets">Digital Assets</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li style="position:relative;"><a href="portfolio.html" class="">Portfolio</a></li>
+                    
+                    <li style="position:relative;">
+                        <a href="insights.html" class="">Insights & Resources <i class="fas fa-chevron-down" style="font-size:0.75rem;margin-left:4px;"></i></a>
+                        <div class="mega-menu" style="left:50%; transform:translateX(-50%); width:300px; justify-content:flex-start; padding:2rem; border-radius:0 0 12px 12px;">
+                            <div class="mega-column" style="width: 100%;">
+                                <h4>Intelligence</h4>
+                                <ul>
+                                    <li><a href="insights.html">News & Insights</a></li>
+                                    <li><a href="esg.html">ESG Practices</a></li>
+                                    <li><a href="resources.html">Resources Center</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="secondary-nav">
+        <div class="secondary-nav-container">
+            <a href="index.html#about">Vision & Mission</a>
+            <a href="index.html#portfolio">Global Markets</a>
+            <a href="index.html#approach">Our Approach</a>
+            <a href="index.html#contact">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Header Section matching Tovus -->
+    <section class="careers-header bg-about">
+        <div class="container fade-in-scroll">
+            <h1>Join Veyronyx Innovation Capital</h1>
+            <p>At Veyronyx Innovation Capital, we build long-term platforms rather than short-term opportunities.</p>
+            <p>We invest in and work alongside companies operating in highly regulated, high-barrier sectors including healthcare, life sciences, artificial intelligence, and emerging technologies.</p>
+            <p>Our team is composed of individuals who value discipline, independent thinking, and long-horizon responsibility. We believe that meaningful innovation requires patience, rigor, and respect for complexity.</p>
+        </div>
+    </section>
+
+    <!-- Department Card -->
+        <!-- Departments Grid matching Tovus layout -->
+    <style>
+        .departments-wrapper {
+            background-color: #92a4a7; /* Gray-blue from screenshot */
+            padding: 4rem 2rem;
+        }
+        .dept-card {
+            display: flex;
+            background-color: #eaf3ee; /* Light mint from screenshot */
+            max-width: 1100px;
+            margin: 0 auto 2rem auto;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            min-height: 250px;
+        }
+        .dept-card.reverse {
+            flex-direction: row-reverse;
+        }
+        .dept-logo-area {
+            flex: 0 0 320px;
+            background-color: #0b1320;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            padding: 2rem;
+        }
+        .dept-info-area {
+            flex: 1;
+            padding: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .dept-info-area h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.85rem;
+            font-weight: 800;
+            color: #111827;
+            margin-bottom: 0.5rem;
+        }
+        .dept-info-area p {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.15rem;
+            color: #4b5563;
+            margin-bottom: 1.5rem;
+        }
+        .dept-btn {
+            background-color: #0f172a;
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.8rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            font-size: 0.9rem;
+        }
+        .dept-btn:hover {
+            background-color: #2563eb;
+        }
+        /* Make responsive */
+        @media (max-width: 768px) {
+            .dept-card, .dept-card.reverse { flex-direction: column; }
+            .dept-logo-area { flex: 0 0 200px; }
+            .dept-info-area { padding: 2rem; text-align: center; align-items: center; }
+        }
+    </style>
+
+    <div class="departments-wrapper">
+        <!-- 1 -->
+        <div class="dept-card fade-in-scroll">
+            <div class="dept-logo-area">
+                <img src="1785860252242a.png" alt="Veyronyx" style="height: 60px; margin-bottom: 1rem;">
+                <div style="font-family:'Montserrat', sans-serif; font-weight:800; font-size:1.25rem;">VEYRONYX</div>
+                <div style="font-size:0.65rem; letter-spacing:2px; color:rgba(255,255,255,0.5);">INNOVATION CAPITAL</div>
+            </div>
+            <div class="dept-info-area">
+                <h3>Investment & Research</h3>
+                <p>Industry research, investment analysis, and decision support</p>
+                <button class="dept-btn" onclick="window.location.href='roles-investment.html'">View Roles</button>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="dept-card reverse fade-in-scroll">
+            <div class="dept-logo-area">
+                <img src="1785860252242a.png" alt="Veyronyx" style="height: 60px; margin-bottom: 1rem;">
+                <div style="font-family:'Montserrat', sans-serif; font-weight:800; font-size:1.25rem;">VEYRONYX</div>
+                <div style="font-size:0.65rem; letter-spacing:2px; color:rgba(255,255,255,0.5);">INNOVATION CAPITAL</div>
+            </div>
+            <div class="dept-info-area">
+                <h3>Business Development & Strategy</h3>
+                <p>Deal flow, partnerships, and strategic initiatives</p>
+                <button class="dept-btn" onclick="window.location.href='roles-business.html'">View Roles</button>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="dept-card fade-in-scroll">
+            <div class="dept-logo-area">
+                <img src="1785860252242a.png" alt="Veyronyx" style="height: 60px; margin-bottom: 1rem;">
+                <div style="font-family:'Montserrat', sans-serif; font-weight:800; font-size:1.25rem;">VEYRONYX</div>
+                <div style="font-size:0.65rem; letter-spacing:2px; color:rgba(255,255,255,0.5);">INNOVATION CAPITAL</div>
+            </div>
+            <div class="dept-info-area">
+                <h3>Post-Investment Operations</h3>
+                <p>Portfolio support and long-term value creation</p>
+                <button class="dept-btn" onclick="window.location.href='roles-post-investment.html'">View Roles</button>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="dept-card reverse fade-in-scroll">
+            <div class="dept-logo-area">
+                <img src="1785860252242a.png" alt="Veyronyx" style="height: 60px; margin-bottom: 1rem;">
+                <div style="font-family:'Montserrat', sans-serif; font-weight:800; font-size:1.25rem;">VEYRONYX</div>
+                <div style="font-size:0.65rem; letter-spacing:2px; color:rgba(255,255,255,0.5);">INNOVATION CAPITAL</div>
+            </div>
+            <div class="dept-info-area">
+                <h3>Finance, Compliance & Legal</h3>
+                <p>Financial discipline, governance, and compliance</p>
+                <button class="dept-btn" onclick="window.location.href='roles-finance.html'">View Roles</button>
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="dept-card fade-in-scroll">
+            <div class="dept-logo-area">
+                <img src="1785860252242a.png" alt="Veyronyx" style="height: 60px; margin-bottom: 1rem;">
+                <div style="font-family:'Montserrat', sans-serif; font-weight:800; font-size:1.25rem;">VEYRONYX</div>
+                <div style="font-size:0.65rem; letter-spacing:2px; color:rgba(255,255,255,0.5);">INNOVATION CAPITAL</div>
+            </div>
+            <div class="dept-info-area">
+                <h3>Marketing, Brand & Communications</h3>
+                <p>Brand strategy, content, and communications</p>
+                <button class="dept-btn" onclick="window.location.href='roles-marketing.html'">View Roles</button>
+            </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="dept-card reverse fade-in-scroll">
+            <div class="dept-logo-area">
+                <img src="1785860252242a.png" alt="Veyronyx" style="height: 60px; margin-bottom: 1rem;">
+                <div style="font-family:'Montserrat', sans-serif; font-weight:800; font-size:1.25rem;">VEYRONYX</div>
+                <div style="font-size:0.65rem; letter-spacing:2px; color:rgba(255,255,255,0.5);">INNOVATION CAPITAL</div>
+            </div>
+            <div class="dept-info-area">
+                <h3>People & Organization</h3>
+                <p>Talent development and organizational systems</p>
+                <button class="dept-btn" onclick="window.location.href='roles-hr.html'">View Roles</button>
+            </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="dept-card fade-in-scroll">
+            <div class="dept-logo-area">
+                <img src="1785860252242a.png" alt="Veyronyx" style="height: 60px; margin-bottom: 1rem;">
+                <div style="font-family:'Montserrat', sans-serif; font-weight:800; font-size:1.25rem;">VEYRONYX</div>
+                <div style="font-size:0.65rem; letter-spacing:2px; color:rgba(255,255,255,0.5);">INNOVATION CAPITAL</div>
+            </div>
+            <div class="dept-info-area">
+                <h3>Technology, Data & Systems</h3>
+                <p>Data platforms, systems, and technical infrastructure</p>
+                <button class="dept-btn" onclick="window.location.href='roles-tech.html'">View Roles</button>
+            </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="dept-card reverse fade-in-scroll">
+            <div class="dept-logo-area">
+                <img src="1785860252242a.png" alt="Veyronyx" style="height: 60px; margin-bottom: 1rem;">
+                <div style="font-family:'Montserrat', sans-serif; font-weight:800; font-size:1.25rem;">VEYRONYX</div>
+                <div style="font-size:0.65rem; letter-spacing:2px; color:rgba(255,255,255,0.5);">INNOVATION CAPITAL</div>
+            </div>
+            <div class="dept-info-area">
+                <h3>Advisors & Partners</h3>
+                <p>Advisory, partner, and senior roles</p>
+                <button class="dept-btn" onclick="window.location.href='roles-advisors.html'">View Roles</button>
+            </div>
+        </div>
+    </div>
+            <div style="font-size:0.7rem; letter-spacing:2px; color:rgba(255,255,255,0.5);">INNOVATION CAPITAL</div>
+        </div>
+        
+
+    
+
+    <!-- Footer placeholder, replaced by script -->
+    
+    <footer class="site-footer" style="padding: 3rem 0 1rem; background: #fff; border-top: 1px solid #e2e8f0;">
+        <div class="container footer-flex" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; margin-bottom: 2rem;">
+            <div class="footer-brand" style="margin-bottom: 2rem; min-width: 250px;">
+                <div style="font-weight:700; font-size:1.5rem; color:#0f172a; margin-bottom: 1rem;"><img src="1785860252242a.png" style="height:24px; vertical-align:middle; margin-right:8px;"> VEYRONYX</div>
+                <p style="font-size:0.9rem; color:#64748b; line-height:1.6; max-width: 300px;">An early-stage innovation and investment platform focused on sustainable energy, industrial modernization, and deep tech.</p>
+            </div>
+            
+            <div style="display: flex; gap: 4rem; flex-wrap:wrap;">
+                <div class="footer-col">
+                    <h4 style="font-family:'Montserrat', sans-serif; font-size:1rem; font-weight:700; color:#0f172a; margin-bottom: 1rem;">Platform</h4>
+                    <ul style="list-style:none; padding:0; line-height:2;">
+                        <li><a href="about.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">About Us</a></li>
+                        <li><a href="portfolio.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Portfolio</a></li>
+                        <li><a href="careers.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 style="font-family:'Montserrat', sans-serif; font-size:1rem; font-weight:700; color:#0f172a; margin-bottom: 1rem;">Intelligence</h4>
+                    <ul style="list-style:none; padding:0; line-height:2;">
+                        <li><a href="focus.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Investment Focus</a></li>
+                        <li><a href="insights.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Market Research</a></li>
+                        <li><a href="resources.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Resource Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 style="font-family:'Montserrat', sans-serif; font-size:1rem; font-weight:700; color:#0f172a; margin-bottom: 1rem;">Legal & Compliance</h4>
+                    <ul style="list-style:none; padding:0; line-height:2;">
+                        <li><a href="compliance.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Privacy Policy</a></li>
+                        <li><a href="compliance.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Terms of Use</a></li>
+                        <li><a href="compliance.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">AML & KYC Policy</a></li>
+                        <li><a href="compliance.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Risk Disclosure</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="border-top:1px solid #f1f5f9; padding-top: 1rem; text-align:center;">
+            <div class="footer-copy" style="font-size:0.85rem; color:#94a3b8;">&copy; 2026 Veyronyx Innovation Capital. All Rights Reserved. Not a solicitation for securities.</div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
