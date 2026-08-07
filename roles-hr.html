@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People & Organization Roles | Veyronyx Innovation Capital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .roles-page-container {
+            max-width: 1200px;
+            margin: 4rem auto 8rem auto;
+            padding: 0 2rem;
+            background-color: #fff;
+        }
+        .roles-page-header {
+            margin-bottom: 3rem;
+        }
+        .roles-page-header h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            color: #111827;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        .roles-page-header p {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            color: #4b5563;
+        }
+        .roles-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 4rem;
+            row-gap: 0;
+            background-color: #fff;
+        }
+        @media (max-width: 768px) {
+            .roles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .role-acc-item {
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .role-acc-btn {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+            background: none;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: #111827;
+            cursor: pointer;
+            text-align: left;
+        }
+        .role-acc-btn i {
+            transition: transform 0.3s ease;
+            color: #6b7280;
+            font-size: 0.85rem;
+        }
+        .role-acc-btn.active i {
+            transform: rotate(90deg);
+        }
+        .role-acc-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease-out;
+            background-color: #fff;
+        }
+        .role-content-inner {
+            padding: 0 0 2rem 0;
+            font-family: 'Inter', sans-serif;
+            color: #6b7280;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        .role-content-inner p.acc-subtitle {
+            margin-bottom:1.5rem; 
+            font-size:0.95rem;
+            color:#9ca3af;
+        }
+        .role-content-inner h4 {
+            color: #4b5563;
+            margin: 1.5rem 0 0.5rem 0;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        .role-content-inner p {
+            margin-bottom: 1rem;
+        }
+        .role-content-inner ul {
+            padding-left: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .role-content-inner ul li {
+            margin-bottom: 0.3rem;
+        }
+    </style>
+</head>
+<body style="background-color: #fff;">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container" style="padding: 0 4rem; position: relative;">
+            <div class="nav-brand">
+                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+                    <div class="nav-logo-icon" style="background: transparent; border: none; padding: 0; margin-right: 0.5rem; display: flex; align-items: center;">
+                        <img src="1785860252242a.png" alt="Veyronyx Logo" style="height: 32px; width: auto; object-fit: contain;">
+                    </div>
+                    <div class="logo" style="color: #0f172a;">Veyronyx Innovation Capital</div>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-links" style="display:flex; align-items:center;">
+                    <li style="position:relative;"><a href="index.html" class="">Overview</a></li>
+                    
+                    <li style="position:relative;">
+                        <a href="about.html" class="active">Company <i class="fas fa-chevron-down" style="font-size:0.75rem;margin-left:4px;"></i></a>
+                        <div class="mega-menu" style="left:50%; transform:translateX(-50%); width:300px; justify-content:flex-start; padding:2rem; border-radius:0 0 12px 12px;">
+                            <div class="mega-column" style="width: 100%;">
+                                <h4>Veyronyx Platform</h4>
+                                <ul>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="why.html">Why Veyronyx</a></li>
+                                    <li><a href="philosophy.html">Investment Philosophy</a></li>
+                                    <li><a href="careers.html" style="color:#2563eb;">Careers & Leadership</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li style="position:relative;">
+                        <a href="focus.html">Investment Focus <i class="fas fa-chevron-down" style="font-size:0.75rem;margin-left:4px;"></i></a>
+                        <div class="mega-menu" style="left:50%; transform:translateX(-50%); width:500px; padding:2rem; border-radius:0 0 12px 12px;">
+                            <div class="mega-column">
+                                <h4>Core Sectors</h4>
+                                <ul>
+                                    <li><a href="focus.html#ai">Artificial Intelligence</a></li>
+                                    <li><a href="focus.html#blockchain">Blockchain Infrastructure</a></li>
+                                    <li><a href="focus.html#digital-assets">Digital Assets</a></li>
+                                    <li><a href="focus.html#energy">Energy Technology</a></li>
+                                    <li><a href="focus.html#healthcare">Healthcare Innovation</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li style="position:relative;"><a href="portfolio.html" class="">Portfolio</a></li>
+                    
+                    <li style="position:relative;">
+                        <a href="insights.html">Insights & Resources <i class="fas fa-chevron-down" style="font-size:0.75rem;margin-left:4px;"></i></a>
+                        <div class="mega-menu" style="right:0; width:450px; justify-content:center; padding:2rem; border-radius:0 0 12px 12px;">
+                            <div class="mega-column">
+                                <h4>Knowledge Center</h4>
+                                <ul>
+                                    <li><a href="insights.html">Market Insights</a></li>
+                                    <li><a href="esg.html">ESG Practices</a></li>
+                                    <li><a href="resources.html">Resources Center</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="roles-page-container">
+        <div class="roles-page-header">
+            <h2>Veyronyx Innovation Capital</h2>
+            <p>HR, Admin, and Organization Support Positions (221-250)</p>
+        </div>
+        
+                <div class="roles-banner-section fade-in-scroll" style="display:flex; gap: 2rem; margin-top: 2rem; margin-bottom: 3rem; flex-wrap: wrap;">
+             <div class="banner-img-left" style="flex: 1; min-width: 300px; border-radius: 8px; overflow: hidden; height: 350px; background: #f1f5f9; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+                  <img src="parallax-bg.png" style="width: 100%; height: 100%; object-fit: cover;">
+             </div>
+             <div class="banner-img-right" style="flex: 1; min-width: 300px; display:flex; flex-direction:column; align-items:center; justify-content:center; background: #0b1320; border-radius: 8px; padding: 2rem; color: #fff; text-align: center; height: 350px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                  <img src="1785860252242a.png" style="height: 60px; margin-bottom: 1rem;">
+                  <h3 style="font-family: 'Montserrat', sans-serif; font-size: 1.5rem; letter-spacing: 1px; margin-bottom: 0.5rem; font-weight: 800;">VEYRONYX</h3>
+                  <p style="font-size: 0.65rem; letter-spacing: 2px; color: rgba(255,255,255,0.5); margin-bottom: 2.5rem;">INNOVATION CAPITAL</p>
+                  
+                  <div style="background: #fff; color: #0f172a; padding: 1.5rem; border-radius: 8px; width: 85%; max-width: 300px; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
+                      <p style="font-weight: 700; font-family: 'Montserrat', sans-serif; margin-bottom: 0.5rem; font-size: 0.95rem;">Contact Veyronyx</p>
+                      <div style="display:flex; flex-direction:column; gap:0.5rem; text-align:left; cursor:default;"><span style="color: #2563eb; text-decoration: none; font-size: 0.75rem; font-weight: 500; word-break: break-all;"><i class="fas fa-envelope" style="margin-right:4px;"></i> support@veyronyxsinocapitals.capital</span><span style="color: #2563eb; text-decoration: none; font-size: 0.75rem; font-weight: 500; word-break: break-all;"><i class="fas fa-envelope" style="margin-right:4px;"></i> lina@veyronyxsinocapitals.capital</span></div>
+                  </div>
+             </div>
+        </div>
+        <div class="roles-grid">
+            <div class="grid-col-left" id="col-left"></div>
+            <div class="grid-col-right" id="col-right"></div>
+        </div>
+    </div>
+
+    <footer class="site-footer" style="padding: 3rem 0 1rem; background: #fff; border-top: 1px solid #e2e8f0;">
+        <div class="container footer-flex" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; margin-bottom: 2rem;">
+            <div class="footer-brand" style="margin-bottom: 2rem; min-width: 250px;">
+                <div style="font-weight:700; font-size:1.5rem; color:#0f172a; margin-bottom: 1rem;"><img src="1785860252242a.png" style="height:24px; vertical-align:middle; margin-right:8px;"> VEYRONYX</div>
+                <p style="font-size:0.9rem; color:#64748b; line-height:1.6; max-width: 300px;">An early-stage innovation and investment platform focused on sustainable energy, industrial modernization, and deep tech.</p>
+            </div>
+            
+            <div style="display: flex; gap: 4rem; flex-wrap:wrap;">
+                <div class="footer-col">
+                    <h4 style="font-family:'Montserrat', sans-serif; font-size:1rem; font-weight:700; color:#0f172a; margin-bottom: 1rem;">Platform</h4>
+                    <ul style="list-style:none; padding:0; line-height:2;">
+                        <li><a href="about.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">About Us</a></li>
+                        <li><a href="portfolio.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Portfolio</a></li>
+                        <li><a href="careers.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 style="font-family:'Montserrat', sans-serif; font-size:1rem; font-weight:700; color:#0f172a; margin-bottom: 1rem;">Intelligence</h4>
+                    <ul style="list-style:none; padding:0; line-height:2;">
+                        <li><a href="focus.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Investment Focus</a></li>
+                        <li><a href="insights.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Market Research</a></li>
+                        <li><a href="resources.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Resource Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 style="font-family:'Montserrat', sans-serif; font-size:1rem; font-weight:700; color:#0f172a; margin-bottom: 1rem;">Legal & Compliance</h4>
+                    <ul style="list-style:none; padding:0; line-height:2;">
+                        <li><a href="compliance.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Privacy Policy</a></li>
+                        <li><a href="compliance.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Terms of Use</a></li>
+                        <li><a href="compliance.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">AML & KYC Policy</a></li>
+                        <li><a href="compliance.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Risk Disclosure</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="border-top:1px solid #f1f5f9; padding-top: 1rem; text-align:center;">
+            <div class="footer-copy" style="font-size:0.85rem; color:#94a3b8;">&copy; 2026 Veyronyx Innovation Capital. All Rights Reserved. Not a solicitation for securities.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const leftCol = document.getElementById('col-left');
+            const rightCol = document.getElementById('col-right');
+
+            const specificTitles = [
+                "Chief Operating Officer (COO)", "Human Resources Director", "Human Resources Manager", "Recruitment and Talent Development Manager",
+                "Senior Talent Acquisition Specialist", "Organizational Development (OD) Manager", "Compensation and Performance Management Manager", "Employee Relations Manager",
+                "Human Resources Operations Specialist", "Learning and Development Manager", "Corporate Culture and Employer Branding Manager", "Administration Director",
+                "Administration Manager", "Office Management Specialist", "Administration and Logistics Coordinator", "Fixed Assets and Procurement Management Specialist",
+                "Internal Controls and Policy Development Manager", "Process and Project Management Office (PMO) Manager", "Corporate Governance and Internal Communications Manager", "Information and Records Management Specialist",
+                "Compliance and Administrative Coordination Specialist", "Executive Assistant", "Board Affairs Assistant", "Cross-Department Coordination Specialist",
+                "Remote Team Operations Manager", "Global Team Support Specialist", "Employee Experience and Wellbeing Specialist", "Internal Review and Discipline Specialist",
+                "Organizational Support Project Manager", "HR and Administration Intern"
+            ];
+
+            let leftHtml = '';
+            let rightHtml = '';
+
+            for (let i = 221; i <= 250; i++) {
+                let title = "";
+                if ((i - 221) < specificTitles.length) {
+                    title = specificTitles[i - 221];
+                } else {
+                    title = "People & Organization Specialist";
+                }
+
+                const html = `
+                    <div class="role-acc-item">
+                        <button class="role-acc-btn">Position ${i}: ${title} <i class="fas fa-chevron-right"></i></button>
+                        <div class="role-acc-content">
+                            <div class="role-content-inner">
+                                <p class="acc-subtitle">Position ${i}: ${title}</p>
+                                <h4>Position Overview</h4>
+                                <p>Drives talent development, organizational culture, and administrative excellence to support a high-performing global workforce.</p>
+                                <h4>Key Responsibilities</h4>
+                                <ul>
+                                    <li>Design and implement comprehensive talent acquisition and retention strategies.</li>
+                                    <li>Ensure seamless organizational operations, facility management, and administrative support.</li>
+                                    <li>Foster an inclusive corporate culture that aligns with the firm's strategic objectives.</li>
+                                </ul>
+                                <h4>Working Style</h4>
+                                <ul>
+                                    <li>Execution-focused, highly analytical, and globally minded.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                if (i % 2 !== 0) {
+                    leftHtml += html;
+                } else {
+                    rightHtml += html;
+                }
+            }
+
+            leftCol.innerHTML = leftHtml;
+            rightCol.innerHTML = rightHtml;
+
+            setTimeout(() => {
+                var acc = document.querySelectorAll(".role-acc-btn");
+                acc.forEach(function(btn) {
+                    btn.addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.maxHeight) {
+                            panel.style.maxHeight = null;
+                            this.querySelector('i').style.transform = 'rotate(0deg)';
+                        } else {
+                            panel.style.maxHeight = panel.scrollHeight + "px";
+                            this.querySelector('i').style.transform = 'rotate(90deg)';
+                        }
+                    });
+                });
+            }, 100);
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
