@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Zero Carbon | Veyronyx Innovation Capital</title>
+    <meta name="description"
+        content="Veyronyx Innovation Capital's exclusive initiative dedicated to funding zero-carbon heavy manufacturing incubators across North America and Asia-Pacific.">
+    <link rel="icon" type="image/png" sizes="32x32" href="1785860252242a.png">
+    <link rel="shortcut icon" href="1785860252242a.png">
+    <link rel="apple-touch-icon" href="1785860252242a.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Veyronyx Innovation Capital">
+    <meta property="og:title" content="Project Zero Carbon | Veyronyx Innovation Capital">
+    <meta property="og:description"
+        content="An exclusive initiative dedicated to funding zero-carbon heavy manufacturing incubators across North America and Asia-Pacific.">
+    <meta property="og:url" content="https://veyronyxvcs.com/project-zero-carbon.html">
+    <meta property="og:image" content="https://veyronyxvcs.com/1785860252242a.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Page-specific styles */
+        .pzc-section {
+            padding: 7rem 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .pzc-section:last-of-type {
+            border-bottom: none;
+        }
+
+        .pzc-section.alt-bg {
+            background: #f8fafc;
+        }
+
+        .pzc-split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .pzc-split.reverse {
+            direction: rtl;
+        }
+
+        .pzc-split.reverse>* {
+            direction: ltr;
+        }
+
+        .pzc-tag {
+            display: inline-block;
+            padding: 0.4rem 1.2rem;
+            background: rgba(37, 99, 235, 0.08);
+            border: 1px solid rgba(37, 99, 235, 0.18);
+            border-radius: 50px;
+            color: #2563eb;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .pzc-title {
+            font-size: 2.6rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            letter-spacing: -0.5px;
+        }
+
+        .pzc-body {
+            font-size: 1.1rem;
+            color: #475569;
+            line-height: 1.9;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .pzc-img {
+            width: 100%;
+            border-radius: 16px;
+            object-fit: cover;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+            height: 420px;
+        }
+
+        /* Objectives list */
+        .pzc-obj-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1.4rem;
+        }
+
+        .pzc-obj-list li {
+            display: flex;
+            gap: 1.2rem;
+            align-items: flex-start;
+        }
+
+        .pzc-obj-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .pzc-obj-text strong {
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #0f172a;
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .pzc-obj-text p {
+            font-size: 0.95rem;
+            color: #64748b;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* Hero stat strip */
+        .pzc-stat-strip {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+            padding: 4rem 0;
+        }
+
+        .pzc-stat-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .pzc-stat-num {
+            font-size: 3rem;
+            font-weight: 800;
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .pzc-stat-label {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            font-family: 'Inter', sans-serif;
+        }
+
+        @media (max-width: 900px) {
+
+            .pzc-split,
+            .pzc-split.reverse {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+                direction: ltr;
+            }
+
+            .pzc-title {
+                font-size: 2rem;
+            }
+
+            .pzc-img {
+                height: 280px;
+            }
+
+            .pzc-stat-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container" style="padding: 0 4rem; position: relative;">
+            <div class="nav-brand">
+                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+                    <div class="nav-logo-icon"
+                        style="background: transparent; border: none; padding: 0; margin-right: 0.5rem; display: flex; align-items: center;">
+                        <img src="1785860252242a.png" alt="Veyronyx Logo"
+                            style="height: 32px; width: auto; object-fit: contain;">
+                    </div>
+                    <div class="logo" style="color: #0f172a;">Veyronyx Innovation Capital</div>
+                </a>
+            </div>
+            <button class="hamburger" id="hamburger"
+                aria-label="Toggle menu"><span></span><span></span><span></span></button>
+            <div class="nav-menu">
+                <ul class="nav-links" style="display:flex; align-items:center;">
+                    <li style="position:relative;"><a href="index.html" class="">Overview</a></li>
+                    <li style="position:relative;">
+                        <a href="about.html" class="">Company <i class="fas fa-chevron-down"
+                                style="font-size:0.75rem;margin-left:4px;"></i></a>
+                        <div class="mega-menu"
+                            style="left:50%; transform:translateX(-50%); width:300px; justify-content:flex-start; padding:2rem; border-radius:0 0 12px 12px;">
+                            <div class="mega-column" style="width:100%;">
+                                <h4>Veyronyx Platform</h4>
+                                <ul>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="why.html">Why Veyronyx</a></li>
+                                    <li><a href="philosophy.html">Investment Philosophy</a></li>
+                                    <li><a href="careers.html">Careers &amp; Leadership</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="position:relative;">
+                        <a href="focus.html" class="">Investment Focus <i class="fas fa-chevron-down"
+                                style="font-size:0.75rem;margin-left:4px;"></i></a>
+                        <div class="mega-menu"
+                            style="left:50%; transform:translateX(-50%); width:800px; padding:3rem; border-radius:0 0 12px 12px;">
+                            <div class="mega-column">
+                                <h4>Deep Tech</h4>
+                                <ul>
+                                    <li><a href="focus.html#ai">Artificial Intelligence</a></li>
+                                    <li><a href="focus.html#blockchain">Blockchain Infrastructure</a></li>
+                                    <li><a href="focus.html#enterprise-software">Enterprise Software</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h4>Industrial</h4>
+                                <ul>
+                                    <li><a href="focus.html#smart-mfg">Smart Manufacturing</a></li>
+                                    <li><a href="focus.html#energy">Energy Technology</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h4>Ecosystems</h4>
+                                <ul>
+                                    <li><a href="focus.html#healthcare">Healthcare Innovation</a></li>
+                                    <li><a href="focus.html#fintech">FinTech</a></li>
+                                    <li><a href="focus.html#digital-assets">Digital Assets</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="position:relative;"><a href="portfolio.html" class="">Portfolio</a></li>
+                    <li style="position:relative;">
+                        <a href="insights.html" class="">Insights &amp; Resources <i class="fas fa-chevron-down"
+                                style="font-size:0.75rem;margin-left:4px;"></i></a>
+                        <div class="mega-menu"
+                            style="left:50%; transform:translateX(-50%); width:300px; justify-content:flex-start; padding:2rem; border-radius:0 0 12px 12px;">
+                            <div class="mega-column" style="width:100%;">
+                                <h4>Intelligence</h4>
+                                <ul>
+                                    <li><a href="insights.html">News &amp; Insights</a></li>
+                                    <li><a href="esg.html">ESG Practices</a></li>
+                                    <li><a href="resources.html">Resources Center</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="secondary-nav">
+        <div class="secondary-nav-container">
+            <a href="index.html#about">Vision &amp; Mission</a>
+            <a href="index.html#portfolio">Global Markets</a>
+            <a href="index.html#approach">Our Approach</a>
+            <a href="index.html#contact">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+        <section style="position:relative;width:100%;padding:10rem 2rem 6rem 2rem;text-align:center;color:#fff;overflow:hidden;box-sizing:border-box;">
+        <img src="pzc-hero.png" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0;pointer-events:none;">
+        <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(rgba(10,20,50,0.65),rgba(10,20,50,0.78));z-index:1;"></div>
+        <div class="container fade-in-scroll" style="position:relative;z-index:2;">
+            <h1 style="font-size:3.5rem;font-weight:800;font-family:'Montserrat',sans-serif;color:#fff;margin-bottom:1rem;">Project Zero Carbon</h1>
+            <p style="color:#94a3b8;font-size:1.25rem;font-family:'Inter',sans-serif;max-width:800px;margin:0 auto;">A systematic pathway to net-zero operations across enterprises, industrial parks, data centers, and infrastructure.</p>
+        </div>
+    </section>
+
+    <!-- Stat Strip -->
+    <div class="pzc-stat-strip">
+        <div class="container">
+            <div class="pzc-stat-grid">
+                <div>
+                    <div class="pzc-stat-num">Net Zero</div>
+                    <div class="pzc-stat-label">Target Emissions Goal</div>
+                </div>
+                <div>
+                    <div class="pzc-stat-num">2</div>
+                    <div class="pzc-stat-label">Core Regions — North America &amp; Asia-Pacific</div>
+                </div>
+                <div>
+                    <div class="pzc-stat-num">6+</div>
+                    <div class="pzc-stat-label">Integrated Clean Energy Pillars</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 1: Overview -->
+    <section class="pzc-section">
+        <div class="container">
+            <div class="pzc-split fade-in-scroll">
+                <div>
+                    <div class="pzc-tag">Project Overview</div>
+                    <h2 class="pzc-title">Zero-Carbon Project Overview</h2>
+                    <p class="pzc-body">
+                        This initiative systematically reduces carbon emissions generated during the operations of
+                        enterprises, industrial parks, data centers, and infrastructure through comprehensive solutions
+                        — including clean energy, energy storage systems, smart grids, AI-driven energy management,
+                        energy-efficiency retrofits, and carbon management.
+                    </p>
+                    <p class="pzc-body" style="margin-top: 1.5rem;">
+                        The project begins by assessing energy consumption and carbon emissions; it then progressively
+                        increases the share of renewable energy while enhancing energy efficiency. Digital energy
+                        management is employed to continuously optimize energy allocation and operational efficiency,
+                        while appropriate carbon removal or other mitigation measures address unavoidable residual
+                        emissions, ultimately driving the project toward net-zero goals.
+                    </p>
+                    <p class="pzc-body" style="margin-top: 1.5rem;">
+                        Zero-carbon projects prioritize not only environmental benefits but also long-term economic
+                        value. By lowering energy costs, improving energy utilization efficiency, enhancing the
+                        resilience of energy supplies, and mitigating risks associated with future carbon emissions and
+                        regulatory compliance, these projects help enterprises establish highly efficient, sustainable,
+                        and competitive operational systems. Simultaneously, they create new opportunities for
+                        investment and collaboration in clean energy, green infrastructure, and the development of
+                        low-carbon industries.
+                    </p>
+                </div>
+                <div>
+                    <img src="pzc-overview.png" alt="Zero-Carbon Industrial Park with Solar Panels and Wind Turbines"
+                        class="pzc-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: What is a zero-carbon project -->
+    <section class="pzc-section alt-bg">
+        <div class="container">
+            <div class="pzc-split reverse fade-in-scroll">
+                <div>
+                    <div class="pzc-tag">Definition</div>
+                    <h2 class="pzc-title">What Is a Zero-Carbon Project?</h2>
+                    <p class="pzc-body">
+                        A zero-carbon (or net-zero) project minimizes the greenhouse gas emissions it generates through
+                        measures such as new energy sources, energy-saving technologies, energy management, and carbon
+                        removal. It then addresses any unavoidable residual emissions, ultimately achieving net
+                        emissions that are close to or equal to zero.
+                    </p>
+                    <p class="pzc-body" style="margin-top: 1.5rem;">
+                        The United Nations' core definition of "net zero" entails first drastically reducing emissions —
+                        leaving only a small amount of residual emissions — and then absorbing and permanently storing
+                        them through natural or other carbon removal methods.
+                    </p>
+                    <div
+                        style="margin-top: 2.5rem; padding: 2rem; background: #fff; border-radius: 16px; border-left: 4px solid #2563eb; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+                        <p
+                            style="font-style: italic; color: #334155; font-size: 1.05rem; line-height: 1.8; font-family: 'Inter', sans-serif; margin: 0;">
+                            "Net zero entails first drastically reducing emissions — then absorbing and permanently
+                            storing residual emissions through natural or engineered carbon removal methods."
+                        </p>
+                        <p
+                            style="margin-top: 1rem; color: #2563eb; font-weight: 700; font-size: 0.85rem; font-family: 'Inter', sans-serif; margin-bottom: 0;">
+                            — United Nations Framework</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="pzc-definition.jpg" alt="Solar Farm and Wind Turbines for Renewable Energy"
+                        class="pzc-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Objectives -->
+    <section class="pzc-section">
+        <div class="container">
+            <div class="pzc-split fade-in-scroll">
+                <div>
+                    <div class="pzc-tag">Strategic Objectives</div>
+                    <h2 class="pzc-title">Objectives of Zero-Carbon Projects</h2>
+                    <ul class="pzc-obj-list">
+                        <li>
+                            <div class="pzc-obj-icon" style="background: rgba(37,99,235,0.1); color: #2563eb;"><i
+                                    class="fas fa-smog"></i></div>
+                            <div class="pzc-obj-text">
+                                <strong>Reducing Carbon Emissions</strong>
+                                <p>Curtailing the use of fossil fuels such as coal, oil, and natural gas to lower
+                                    emissions of CO₂ and other greenhouse gases.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pzc-obj-icon" style="background: rgba(22,163,74,0.1); color: #16a34a;"><i
+                                    class="fas fa-bolt"></i></div>
+                            <div class="pzc-obj-text">
+                                <strong>Lowering Energy Costs</strong>
+                                <p>Improving energy efficiency through solar power, wind energy, energy storage, smart
+                                    grids, and AI-driven energy management to reduce electricity and operational costs
+                                    over the long term.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pzc-obj-icon" style="background: rgba(234,179,8,0.1); color: #ca8a04;"><i
+                                    class="fas fa-solar-panel"></i></div>
+                            <div class="pzc-obj-text">
+                                <strong>Achieving Energy Transition</strong>
+                                <p>Facilitating the shift from traditional energy sources to renewable and clean energy,
+                                    thereby enhancing energy independence and stability.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pzc-obj-icon" style="background: rgba(124,58,237,0.1); color: #7c3aed;"><i
+                                    class="fas fa-balance-scale"></i></div>
+                            <div class="pzc-obj-text">
+                                <strong>Meeting Policy &amp; Compliance Requirements</strong>
+                                <p>Addressing increasingly stringent global regulations regarding carbon emissions,
+                                    energy efficiency, and climate-related disclosures to mitigate future compliance
+                                    risks.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pzc-obj-icon" style="background: rgba(239,68,68,0.1); color: #dc2626;"><i
+                                    class="fas fa-chart-line"></i></div>
+                            <div class="pzc-obj-text">
+                                <strong>Enhancing Corporate Competitiveness</strong>
+                                <p>Leveraging zero-carbon capabilities as a competitive advantage to secure orders,
+                                    financing, and partnerships, given the growing focus of major clients, investors,
+                                    and supply chain partners on carbon performance.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pzc-obj-icon" style="background: rgba(14,165,233,0.1); color: #0ea5e9;"><i
+                                    class="fas fa-seedling"></i></div>
+                            <div class="pzc-obj-text">
+                                <strong>Creating New Investment Opportunities</strong>
+                                <p>Generating investment prospects across sectors such as solar power, energy storage,
+                                    green data centers, smart manufacturing, green buildings, hydrogen energy, and CCUS
+                                    (Carbon Capture, Utilization, and Storage).</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="pzc-objectives.png" alt="AI-Driven Smart Energy Management Control Room" class="pzc-img"
+                        style="height: 560px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); padding: 6rem 0;">
+        <div class="container fade-in-scroll" style="text-align: center;">
+            <h2
+                style="font-size: 2.8rem; font-family: 'Montserrat', sans-serif; font-weight: 800; color: #fff; margin-bottom: 1.5rem;">
+                Partner With Veyronyx on Zero-Carbon Innovation</h2>
+            <p
+                style="font-size: 1.2rem; color: #94a3b8; max-width: 700px; margin: 0 auto 3rem auto; line-height: 1.8; font-family: 'Inter', sans-serif;">
+                We are actively seeking enterprises, industrial operators, and institutional partners committed to
+                building the next generation of zero-carbon infrastructure.
+            </p>
+            <a href="index.html#contact"
+                style="display: inline-flex; align-items: center; gap: 0.75rem; padding: 1.2rem 3rem; background: #fff; color: #0f172a; border-radius: 8px; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1rem; text-decoration: none; transition: all 0.3s ease;"
+                onmouseover="this.style.background='#e2e8f0'" onmouseout="this.style.background='#fff'">
+                Contact Our Team <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" style="padding: 3rem 0 1rem; background: #fff; border-top: 1px solid #e2e8f0;">
+        <div class="container footer-flex"
+            style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; margin-bottom: 2rem;">
+            <div class="footer-brand" style="margin-bottom: 2rem; min-width: 250px;">
+                <div style="font-weight:700; font-size:1.5rem; color:#0f172a; margin-bottom: 1rem;"><img
+                        src="1785860252242a.png" style="height:24px; vertical-align:middle; margin-right:8px;"> VEYRONYX
+                </div>
+                <p style="font-size:0.9rem; color:#64748b; line-height:1.6; max-width: 300px;">An early-stage innovation
+                    and investment platform focused on sustainable energy, industrial modernization, and deep tech.</p>
+            </div>
+            <div style="display: flex; gap: 4rem; flex-wrap:wrap;">
+                <div class="footer-col">
+                    <h4
+                        style="font-family:'Montserrat', sans-serif; font-size:1rem; font-weight:700; color:#0f172a; margin-bottom: 1rem;">
+                        Platform</h4>
+                    <ul style="list-style:none; padding:0; line-height:2;">
+                        <li><a href="about.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">About
+                                Us</a></li>
+                        <li><a href="portfolio.html"
+                                style="color:#64748b; text-decoration:none; font-size:0.9rem;">Portfolio</a></li>
+                        <li><a href="careers.html"
+                                style="color:#64748b; text-decoration:none; font-size:0.9rem;">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4
+                        style="font-family:'Montserrat', sans-serif; font-size:1rem; font-weight:700; color:#0f172a; margin-bottom: 1rem;">
+                        Intelligence</h4>
+                    <ul style="list-style:none; padding:0; line-height:2;">
+                        <li><a href="focus.html"
+                                style="color:#64748b; text-decoration:none; font-size:0.9rem;">Investment Focus</a></li>
+                        <li><a href="insights.html"
+                                style="color:#64748b; text-decoration:none; font-size:0.9rem;">Market Research</a></li>
+                        <li><a href="resources.html"
+                                style="color:#64748b; text-decoration:none; font-size:0.9rem;">Resource Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4
+                        style="font-family:'Montserrat', sans-serif; font-size:1rem; font-weight:700; color:#0f172a; margin-bottom: 1rem;">
+                        Legal &amp; Compliance</h4>
+                    <ul style="list-style:none; padding:0; line-height:2;">
+                        <li><a href="compliance.html"
+                                style="color:#64748b; text-decoration:none; font-size:0.9rem;">Privacy Policy</a></li>
+                        <li><a href="compliance.html"
+                                style="color:#64748b; text-decoration:none; font-size:0.9rem;">Terms of Use</a></li>
+                        <li><a href="compliance.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">AML
+                                &amp; KYC Policy</a></li>
+                        <li><a href="compliance.html"
+                                style="color:#64748b; text-decoration:none; font-size:0.9rem;">Risk Disclosure</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="border-top:1px solid #f1f5f9; padding-top: 1rem; text-align:center;">
+            <div class="footer-copy" style="font-size:0.85rem; color:#94a3b8;">&copy; 2026 Veyronyx Innovation Capital.
+                All Rights Reserved. Not a solicitation for securities.</div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+

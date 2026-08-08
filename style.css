@@ -889,12 +889,15 @@ a {
     .vision-grid {
         grid-template-columns: 1fr;
     }
-}/* Stats Section */
+}
+
+/* Stats Section */
 .stats-section {
     padding: 8rem 2rem;
     background: #ffffff;
     border-top: 1px solid #e2e8f0;
 }
+
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -902,10 +905,12 @@ a {
     max-width: 1200px;
     margin: 4rem auto 0 auto;
 }
+
 .stat-item {
     text-align: center;
     position: relative;
 }
+
 .stat-item:not(:last-child)::after {
     content: '';
     position: absolute;
@@ -915,6 +920,7 @@ a {
     width: 1px;
     background: #e2e8f0;
 }
+
 .stat-number {
     font-size: 4rem;
     font-weight: 800;
@@ -923,6 +929,7 @@ a {
     margin-bottom: 0.5rem;
     line-height: 1;
 }
+
 .stat-label {
     font-size: 1.1rem;
     color: #64748b;
@@ -930,15 +937,33 @@ a {
     font-family: 'Inter', sans-serif;
     line-height: 1.5;
 }
+
 @media (max-width: 900px) {
-    .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 3rem; }
-    .stat-item:nth-child(2)::after { display: none; }
-    .stat-item:not(:last-child)::after { right: -1.5rem; }
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+
+    .stat-item:nth-child(2)::after {
+        display: none;
+    }
+
+    .stat-item:not(:last-child)::after {
+        right: -1.5rem;
+    }
 }
+
 @media (max-width: 600px) {
-    .stats-grid { grid-template-columns: 1fr; gap: 3rem; }
-    .stat-item::after { display: none !important; }
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .stat-item::after {
+        display: none !important;
+    }
 }
+
 /* Disable after lines for batang cards */
 .stats-grid .batang-card::after {
     display: none !important;
@@ -955,7 +980,7 @@ a {
     color: #fff;
     position: relative;
     overflow: hidden;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .page-hero h1 {
@@ -1051,7 +1076,8 @@ a {
     font-weight: 500;
 }
 
-.nav-links li a:hover, .nav-links li a.active {
+.nav-links li a:hover,
+.nav-links li a.active {
     color: #2563eb;
 }
 
@@ -1120,7 +1146,8 @@ a {
     border-bottom: 1px solid #e2e8f0;
     padding: 1rem 0;
     position: fixed;
-    top: 70px; /* Below primary nav */
+    top: 70px;
+    /* Below primary nav */
     width: 100%;
     z-index: 999;
 }
@@ -1141,7 +1168,8 @@ a {
     transition: color 0.2s;
 }
 
-.secondary-nav a:hover, .secondary-nav a.active {
+.secondary-nav a:hover,
+.secondary-nav a.active {
     color: #2563eb;
 }
 
@@ -1168,6 +1196,9 @@ a {
 
 .enterprise-card-content {
     padding: 0 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .enterprise-card h3 {
@@ -1189,6 +1220,7 @@ a {
 .enterprise-link {
     color: #2563eb;
     text-decoration: none;
+    margin-top: auto;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -1224,15 +1256,30 @@ a {
 }
 
 /* Reset specific overrides to align with Qualcomm aesthetic */
-.bento-section { display: none; } /* We will transition away from the glass bento grid */
+.bento-section {
+    display: none;
+}
+
+/* We will transition away from the glass bento grid */
 
 
 
 /* Unique Page Backgrounds */
-.bg-about { background-image: linear-gradient(rgba(15, 23, 42, 0.82), rgba(15, 23, 42, 0.95)), url('bg_about.png'); }
-.bg-focus { background-image: linear-gradient(rgba(15, 23, 42, 0.82), rgba(15, 23, 42, 0.95)), url('bg_focus.png'); }
-.bg-insights { background-image: linear-gradient(rgba(15, 23, 42, 0.82), rgba(15, 23, 42, 0.95)), url('bg_insights.png'); }
-.bg-portfolio { background-image: linear-gradient(rgba(15, 23, 42, 0.82), rgba(15, 23, 42, 0.95)), url('bg_portfolio.png'); }
+.bg-about {
+    background-image: linear-gradient(rgba(15, 23, 42, 0.82), rgba(15, 23, 42, 0.95)), url('bg_about.png');
+}
+
+.bg-focus {
+    background-image: linear-gradient(rgba(15, 23, 42, 0.82), rgba(15, 23, 42, 0.95)), url('bg_focus.png');
+}
+
+.bg-insights {
+    background-image: linear-gradient(rgba(15, 23, 42, 0.82), rgba(15, 23, 42, 0.95)), url('bg_insights.png');
+}
+
+.bg-portfolio {
+    background-image: linear-gradient(rgba(15, 23, 42, 0.82), rgba(15, 23, 42, 0.95)), url('bg_portfolio.png');
+}
 
 /* ============================================================
    GLOBAL MOBILE RESPONSIVE OVERRIDES
@@ -1249,6 +1296,7 @@ a {
     background: none;
     border: none;
 }
+
 .hamburger span {
     display: block;
     width: 24px;
@@ -1257,12 +1305,25 @@ a {
     border-radius: 2px;
     transition: all 0.3s ease;
 }
-.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.hamburger.open span:nth-child(2) { opacity: 0; }
-.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.hamburger.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
 
 /* Secondary nav (sub-links bar) */
-.secondary-nav { overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
+.secondary-nav {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
 
 /* Prevent 100vw sections from causing horizontal scroll */
 .qualcomm-style-section,
@@ -1277,8 +1338,11 @@ a {
 }
 
 @media (max-width: 900px) {
+
     /* ---- Navbar ---- */
-    .hamburger { display: flex; }
+    .hamburger {
+        display: flex;
+    }
 
     .nav-menu {
         display: none;
@@ -1295,14 +1359,21 @@ a {
         border-top: 1px solid #e2e8f0;
         gap: 0;
     }
-    .nav-menu.open { display: flex; }
+
+    .nav-menu.open {
+        display: flex;
+    }
 
     .nav-links {
         flex-direction: column;
         gap: 0;
         width: 100%;
     }
-    .nav-links li { border-bottom: 1px solid #f1f5f9; }
+
+    .nav-links li {
+        border-bottom: 1px solid #f1f5f9;
+    }
+
     .nav-links li a {
         display: block;
         padding: 1rem 0.5rem;
@@ -1310,7 +1381,10 @@ a {
         color: #0f172a;
         font-weight: 600;
     }
-    .nav-links li a:after { display: none; }
+
+    .nav-links li a:after {
+        display: none;
+    }
 
     /* Mega menus become static accordion-style on mobile */
     .mega-menu {
@@ -1325,44 +1399,105 @@ a {
         background: #f8fafc !important;
         display: none;
     }
+
     .nav-links li:hover .mega-menu,
-    .nav-links li.open .mega-menu { display: flex; flex-direction: column; gap: 0; }
+    .nav-links li.open .mega-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
 
-    .mega-column { width: 100%; }
-    .mega-column ul { padding: 0; }
-    .mega-column ul li a { font-size: 0.95rem; padding: 0.6rem 0; color: #334155; }
-    .mega-column h4 { font-size: 0.8rem; margin-top: 1rem; }
+    .mega-column {
+        width: 100%;
+    }
 
-    .nav-tools { display: none; }
+    .mega-column ul {
+        padding: 0;
+    }
+
+    .mega-column ul li a {
+        font-size: 0.95rem;
+        padding: 0.6rem 0;
+        color: #334155;
+    }
+
+    .mega-column h4 {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    .nav-tools {
+        display: none;
+    }
 
     /* ---- Layout fixes ---- */
-    .hero-content { left: 5%; right: 5%; bottom: 8%; }
-    .hero-title { font-size: 2.2rem; }
-    .hero-subtitle { font-size: 1rem; }
+    .hero-content {
+        left: 5%;
+        right: 5%;
+        bottom: 8%;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
 
     .section-split,
     .segment-block,
     .segment-block.reverse,
-    .split-layout { flex-direction: column !important; gap: 2rem; }
+    .split-layout {
+        flex-direction: column !important;
+        gap: 2rem;
+    }
 
-    .segment-media img { height: 250px; }
+    .segment-media img {
+        height: 250px;
+    }
 
-    .stats-grid { grid-template-columns: repeat(2, 1fr); }
-    .grid-3 { grid-template-columns: 1fr; }
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-    .contact-container { grid-template-columns: 1fr; }
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
 
     /* ---- Internal page hero ---- */
-    .page-hero h1 { font-size: 2.2rem; }
-    .page-hero p { font-size: 1rem; }
+    .page-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .page-hero p {
+        font-size: 1rem;
+    }
 
     /* ---- About Mission/Vision/Values glassmorphic grid ---- */
-    .container[style*="grid-template-columns: repeat"] { display: flex !important; flex-direction: column !important; }
+    .container[style*="grid-template-columns: repeat"] {
+        display: flex !important;
+        flex-direction: column !important;
+    }
 
     /* ---- ESG cards ---- */
-    .edge-grid { grid-template-columns: 1fr !important; }
-    .edge-featured { flex-direction: column !important; padding: 2.5rem 2rem !important; text-align: left; }
-    .edge-featured .edge-title { font-size: 1.8rem !important; }
+    .edge-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .edge-featured {
+        flex-direction: column !important;
+        padding: 2.5rem 2rem !important;
+        text-align: left;
+    }
+
+    .edge-featured .edge-title {
+        font-size: 1.8rem !important;
+    }
 
     /* ---- ESG Pillar Cards ---- */
     [style*="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))"],
@@ -1373,43 +1508,101 @@ a {
 
     /* ---- Philosophy alternating cards ---- */
     .philo-card,
-    .philo-card:nth-child(even) { flex-direction: column !important; text-align: left; padding: 2.5rem 2rem; gap: 2rem; }
+    .philo-card:nth-child(even) {
+        flex-direction: column !important;
+        text-align: left;
+        padding: 2.5rem 2rem;
+        gap: 2rem;
+    }
 
     /* ---- Resource cards grid ---- */
-    .res-card { margin-bottom: 1rem; }
+    .res-card {
+        margin-bottom: 1rem;
+    }
 
     /* ---- Careers dept grid ---- */
     .dept-card,
-    .dept-card.reverse { flex-direction: column !important; min-height: auto; }
+    .dept-card.reverse {
+        flex-direction: column !important;
+        min-height: auto;
+    }
+
     .dept-card .dept-info,
-    .dept-card .dept-img { width: 100% !important; }
-    .dept-card .dept-img { height: 200px; }
+    .dept-card .dept-img {
+        width: 100% !important;
+    }
+
+    .dept-card .dept-img {
+        height: 200px;
+    }
 
     /* ---- Footer ---- */
-    .footer-flex { flex-direction: column; }
-    .footer-flex > div { flex-direction: column; gap: 2rem; }
+    .footer-flex {
+        flex-direction: column;
+    }
+
+    .footer-flex>div {
+        flex-direction: column;
+        gap: 2rem;
+    }
 
     /* ---- Portfolio pipeline grid ---- */
-    [style*="grid-template-columns: 1fr 1fr"] { grid-template-columns: 1fr !important; }
+    [style*="grid-template-columns: 1fr 1fr"] {
+        grid-template-columns: 1fr !important;
+    }
 
     /* ---- Insights bento grid ---- */
     .bento-grid,
-    [style*="grid-template-columns: 2fr 1fr"] { grid-template-columns: 1fr !important; }
-    .span-2-cols { grid-column: span 1 !important; }
-    .span-2-rows { grid-row: span 1 !important; min-height: 300px; }
+    [style*="grid-template-columns: 2fr 1fr"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    .span-2-cols {
+        grid-column: span 1 !important;
+    }
+
+    .span-2-rows {
+        grid-row: span 1 !important;
+        min-height: 300px;
+    }
 
     /* ---- Focus alternating sector layout ---- */
     .sector-item,
-    .sector-item:nth-child(even) { flex-direction: column !important; }
+    .sector-item:nth-child(even) {
+        flex-direction: column !important;
+    }
 }
 
 @media (max-width: 600px) {
-    .hero-title { font-size: 1.8rem; }
-    .stats-grid { grid-template-columns: 1fr; }
-    .stat-item::after { display: none !important; }
-    .page-hero { padding: 8rem 1.5rem 3rem 1.5rem; }
-    .page-hero h1 { font-size: 1.8rem; }
-    .philo-title { font-size: 1.6rem !important; }
-    .edge-title { font-size: 1.3rem !important; }
-    .container { width: 95%; }
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-item::after {
+        display: none !important;
+    }
+
+    .page-hero {
+        padding: 8rem 1.5rem 3rem 1.5rem;
+    }
+
+    .page-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .philo-title {
+        font-size: 1.6rem !important;
+    }
+
+    .edge-title {
+        font-size: 1.3rem !important;
+    }
+
+    .container {
+        width: 95%;
+    }
 }
