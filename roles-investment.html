@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Investment Evaluation Roles | Veyronyx Innovation Capital</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -14,9 +17,11 @@
             padding: 0 2rem;
             background-color: #fff;
         }
+
         .roles-page-header {
             margin-bottom: 3rem;
         }
+
         .roles-page-header h2 {
             font-family: 'Montserrat', sans-serif;
             font-size: 2rem;
@@ -24,11 +29,13 @@
             margin-bottom: 0.5rem;
             font-weight: 500;
         }
+
         .roles-page-header p {
             font-family: 'Inter', sans-serif;
             font-size: 0.95rem;
             color: #4b5563;
         }
+
         .roles-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -36,14 +43,17 @@
             row-gap: 0;
             background-color: #fff;
         }
+
         @media (max-width: 768px) {
             .roles-grid {
                 grid-template-columns: 1fr;
             }
         }
+
         .role-acc-item {
             border-bottom: 1px solid #e5e7eb;
         }
+
         .role-acc-btn {
             width: 100%;
             display: flex;
@@ -59,20 +69,24 @@
             cursor: pointer;
             text-align: left;
         }
+
         .role-acc-btn i {
             transition: transform 0.3s ease;
             color: #6b7280;
             font-size: 0.85rem;
         }
+
         .role-acc-btn.active i {
             transform: rotate(90deg);
         }
+
         .role-acc-content {
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.35s ease-out;
             background-color: #fff;
         }
+
         .role-content-inner {
             padding: 0 0 2rem 0;
             font-family: 'Inter', sans-serif;
@@ -80,29 +94,40 @@
             font-size: 0.9rem;
             line-height: 1.6;
         }
+
         .role-content-inner p.acc-subtitle {
-            margin-bottom:1.5rem; 
-            font-size:0.95rem;
-            color:#9ca3af;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+            color: #9ca3af;
         }
+
         .role-content-inner h4 {
             color: #4b5563;
             margin: 1.5rem 0 0.5rem 0;
             font-size: 0.9rem;
             font-weight: 600;
         }
+
         .role-content-inner p {
             margin-bottom: 1rem;
         }
+
         .role-content-inner ul {
             padding-left: 1.2rem;
             margin-bottom: 1rem;
         }
+
         .role-content-inner ul li {
             margin-bottom: 0.3rem;
         }
     </style>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="1785860252242a.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="1785860252242a.png">
+    <link rel="shortcut icon" href="1785860252242a.png">
+    <link rel="apple-touch-icon" href="1785860252242a.png">
 </head>
+
 <body style="background-color: #fff;">
 
     <!-- Navbar -->
@@ -110,20 +135,25 @@
         <div class="nav-container" style="padding: 0 4rem; position: relative;">
             <div class="nav-brand">
                 <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
-                    <div class="nav-logo-icon" style="background: transparent; border: none; padding: 0; margin-right: 0.5rem; display: flex; align-items: center;">
-                        <img src="1785860252242a.png" alt="Veyronyx Logo" style="height: 32px; width: auto; object-fit: contain;">
+                    <div class="nav-logo-icon"
+                        style="background: transparent; border: none; padding: 0; margin-right: 0.5rem; display: flex; align-items: center;">
+                        <img src="1785860252242a.png" alt="Veyronyx Logo"
+                            style="height: 32px; width: auto; object-fit: contain;">
                     </div>
                     <div class="logo" style="color: #0f172a;">Veyronyx Innovation Capital</div>
                 </a>
             </div>
-            <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+            <button class="hamburger" id="hamburger"
+                aria-label="Toggle menu"><span></span><span></span><span></span></button>
             <div class="nav-menu">
                 <ul class="nav-links" style="display:flex; align-items:center;">
                     <li style="position:relative;"><a href="index.html" class="">Overview</a></li>
-                    
+
                     <li style="position:relative;">
-                        <a href="about.html" class="active">Company <i class="fas fa-chevron-down" style="font-size:0.75rem;margin-left:4px;"></i></a>
-                        <div class="mega-menu" style="left:50%; transform:translateX(-50%); width:300px; justify-content:flex-start; padding:2rem; border-radius:0 0 12px 12px;">
+                        <a href="about.html" class="active">Company <i class="fas fa-chevron-down"
+                                style="font-size:0.75rem;margin-left:4px;"></i></a>
+                        <div class="mega-menu"
+                            style="left:50%; transform:translateX(-50%); width:300px; justify-content:flex-start; padding:2rem; border-radius:0 0 12px 12px;">
                             <div class="mega-column" style="width: 100%;">
                                 <h4>Veyronyx Platform</h4>
                                 <ul>
@@ -137,8 +167,10 @@
                     </li>
 
                     <li style="position:relative;">
-                        <a href="focus.html">Investment Focus <i class="fas fa-chevron-down" style="font-size:0.75rem;margin-left:4px;"></i></a>
-                        <div class="mega-menu" style="left:50%; transform:translateX(-50%); width:500px; padding:2rem; border-radius:0 0 12px 12px;">
+                        <a href="focus.html">Investment Focus <i class="fas fa-chevron-down"
+                                style="font-size:0.75rem;margin-left:4px;"></i></a>
+                        <div class="mega-menu"
+                            style="left:50%; transform:translateX(-50%); width:500px; padding:2rem; border-radius:0 0 12px 12px;">
                             <div class="mega-column">
                                 <h4>Core Sectors</h4>
                                 <ul>
@@ -153,10 +185,12 @@
                     </li>
 
                     <li style="position:relative;"><a href="portfolio.html" class="">Portfolio</a></li>
-                    
+
                     <li style="position:relative;">
-                        <a href="insights.html">Insights & Resources <i class="fas fa-chevron-down" style="font-size:0.75rem;margin-left:4px;"></i></a>
-                        <div class="mega-menu" style="right:0; width:450px; justify-content:center; padding:2rem; border-radius:0 0 12px 12px;">
+                        <a href="insights.html">Insights & Resources <i class="fas fa-chevron-down"
+                                style="font-size:0.75rem;margin-left:4px;"></i></a>
+                        <div class="mega-menu"
+                            style="right:0; width:450px; justify-content:center; padding:2rem; border-radius:0 0 12px 12px;">
                             <div class="mega-column">
                                 <h4>Knowledge Center</h4>
                                 <ul>
@@ -182,21 +216,37 @@
             <h2>Veyronyx Innovation Capital</h2>
             <p>Investment and research positions (1-60)</p>
         </div>
-        
-                <div class="roles-banner-section fade-in-scroll" style="display:flex; gap: 2rem; margin-top: 2rem; margin-bottom: 3rem; flex-wrap: wrap;">
-             <div class="banner-img-left" style="flex: 1; min-width: 300px; border-radius: 8px; overflow: hidden; height: 350px; background: #f1f5f9; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
-                  <img src="bg_about.png" style="width: 100%; height: 100%; object-fit: cover;">
-             </div>
-             <div class="banner-img-right" style="flex: 1; min-width: 300px; display:flex; flex-direction:column; align-items:center; justify-content:center; background: #0b1320; border-radius: 8px; padding: 2rem; color: #fff; text-align: center; height: 350px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
-                  <img src="1785860252242a.png" style="height: 60px; margin-bottom: 1rem;">
-                  <h3 style="font-family: 'Montserrat', sans-serif; font-size: 1.5rem; letter-spacing: 1px; margin-bottom: 0.5rem; font-weight: 800;">VEYRONYX</h3>
-                  <p style="font-size: 0.65rem; letter-spacing: 2px; color: rgba(255,255,255,0.5); margin-bottom: 2.5rem;">INNOVATION CAPITAL</p>
-                  
-                  <div style="background: #fff; color: #0f172a; padding: 1.5rem; border-radius: 8px; width: 85%; max-width: 300px; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
-                      <p style="font-weight: 700; font-family: 'Montserrat', sans-serif; margin-bottom: 0.5rem; font-size: 0.95rem;">Contact Veyronyx</p>
-                      <div style="display:flex; flex-direction:column; gap:0.5rem; text-align:left; cursor:default;"><span style="color: #2563eb; text-decoration: none; font-size: 0.75rem; font-weight: 500; word-break: break-all;"><i class="fas fa-envelope" style="margin-right:4px;"></i> support@veyronyxsinocapitals.capital</span><span style="color: #2563eb; text-decoration: none; font-size: 0.75rem; font-weight: 500; word-break: break-all;"><i class="fas fa-envelope" style="margin-right:4px;"></i> lina@veyronyxsinocapitals.capital</span></div>
-                  </div>
-             </div>
+
+        <div class="roles-banner-section fade-in-scroll"
+            style="display:flex; gap: 2rem; margin-top: 2rem; margin-bottom: 3rem; flex-wrap: wrap;">
+            <div class="banner-img-left"
+                style="flex: 1; min-width: 300px; border-radius: 8px; overflow: hidden; height: 350px; background: #f1f5f9; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+                <img src="bg_about.png" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="banner-img-right"
+                style="flex: 1; min-width: 300px; display:flex; flex-direction:column; align-items:center; justify-content:center; background: #0b1320; border-radius: 8px; padding: 2rem; color: #fff; text-align: center; height: 350px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                <img src="1785860252242a.png" style="height: 60px; margin-bottom: 1rem;">
+                <h3
+                    style="font-family: 'Montserrat', sans-serif; font-size: 1.5rem; letter-spacing: 1px; margin-bottom: 0.5rem; font-weight: 800;">
+                    VEYRONYX</h3>
+                <p
+                    style="font-size: 0.65rem; letter-spacing: 2px; color: rgba(255,255,255,0.5); margin-bottom: 2.5rem;">
+                    INNOVATION CAPITAL</p>
+
+                <div
+                    style="background: #fff; color: #0f172a; padding: 1.5rem; border-radius: 8px; width: 85%; max-width: 300px; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
+                    <p
+                        style="font-weight: 700; font-family: 'Montserrat', sans-serif; margin-bottom: 0.5rem; font-size: 0.95rem;">
+                        Contact Veyronyx</p>
+                    <div style="display:flex; flex-direction:column; gap:0.5rem; text-align:left; cursor:default;"><span
+                            style="color: #2563eb; text-decoration: none; font-size: 0.75rem; font-weight: 500; word-break: break-all;"><i
+                                class="fas fa-envelope" style="margin-right:4px;"></i>
+                            support@veyronyxsinocapitals.capital</span><span
+                            style="color: #2563eb; text-decoration: none; font-size: 0.75rem; font-weight: 500; word-break: break-all;"><i
+                                class="fas fa-envelope" style="margin-right:4px;"></i>
+                            lina@veyronyxsinocapitals.capital</span></div>
+                </div>
+            </div>
         </div>
         <div class="roles-grid">
             <div class="grid-col-left" id="col-left"></div>
@@ -205,48 +255,69 @@
     </div>
 
     <footer class="site-footer" style="padding: 3rem 0 1rem; background: #fff; border-top: 1px solid #e2e8f0;">
-        <div class="container footer-flex" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; margin-bottom: 2rem;">
+        <div class="container footer-flex"
+            style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; margin-bottom: 2rem;">
             <div class="footer-brand" style="margin-bottom: 2rem; min-width: 250px;">
-                <div style="font-weight:700; font-size:1.5rem; color:#0f172a; margin-bottom: 1rem;"><img src="1785860252242a.png" style="height:24px; vertical-align:middle; margin-right:8px;"> VEYRONYX</div>
-                <p style="font-size:0.9rem; color:#64748b; line-height:1.6; max-width: 300px;">An early-stage innovation and investment platform focused on sustainable energy, industrial modernization, and deep tech.</p>
+                <div style="font-weight:700; font-size:1.5rem; color:#0f172a; margin-bottom: 1rem;"><img
+                        src="1785860252242a.png" style="height:24px; vertical-align:middle; margin-right:8px;"> VEYRONYX
+                </div>
+                <p style="font-size:0.9rem; color:#64748b; line-height:1.6; max-width: 300px;">An early-stage innovation
+                    and investment platform focused on sustainable energy, industrial modernization, and deep tech.</p>
             </div>
-            
+
             <div style="display: flex; gap: 4rem; flex-wrap:wrap;">
                 <div class="footer-col">
-                    <h4 style="font-family:'Montserrat', sans-serif; font-size:1rem; font-weight:700; color:#0f172a; margin-bottom: 1rem;">Platform</h4>
+                    <h4
+                        style="font-family:'Montserrat', sans-serif; font-size:1rem; font-weight:700; color:#0f172a; margin-bottom: 1rem;">
+                        Platform</h4>
                     <ul style="list-style:none; padding:0; line-height:2;">
-                        <li><a href="about.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">About Us</a></li>
-                        <li><a href="portfolio.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Portfolio</a></li>
-                        <li><a href="careers.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Careers</a></li>
+                        <li><a href="about.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">About
+                                Us</a></li>
+                        <li><a href="portfolio.html"
+                                style="color:#64748b; text-decoration:none; font-size:0.9rem;">Portfolio</a></li>
+                        <li><a href="careers.html"
+                                style="color:#64748b; text-decoration:none; font-size:0.9rem;">Careers</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4 style="font-family:'Montserrat', sans-serif; font-size:1rem; font-weight:700; color:#0f172a; margin-bottom: 1rem;">Intelligence</h4>
+                    <h4
+                        style="font-family:'Montserrat', sans-serif; font-size:1rem; font-weight:700; color:#0f172a; margin-bottom: 1rem;">
+                        Intelligence</h4>
                     <ul style="list-style:none; padding:0; line-height:2;">
-                        <li><a href="focus.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Investment Focus</a></li>
-                        <li><a href="insights.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Market Research</a></li>
-                        <li><a href="resources.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Resource Center</a></li>
+                        <li><a href="focus.html"
+                                style="color:#64748b; text-decoration:none; font-size:0.9rem;">Investment Focus</a></li>
+                        <li><a href="insights.html"
+                                style="color:#64748b; text-decoration:none; font-size:0.9rem;">Market Research</a></li>
+                        <li><a href="resources.html"
+                                style="color:#64748b; text-decoration:none; font-size:0.9rem;">Resource Center</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4 style="font-family:'Montserrat', sans-serif; font-size:1rem; font-weight:700; color:#0f172a; margin-bottom: 1rem;">Legal & Compliance</h4>
+                    <h4
+                        style="font-family:'Montserrat', sans-serif; font-size:1rem; font-weight:700; color:#0f172a; margin-bottom: 1rem;">
+                        Legal & Compliance</h4>
                     <ul style="list-style:none; padding:0; line-height:2;">
-                        <li><a href="compliance.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Privacy Policy</a></li>
-                        <li><a href="compliance.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Terms of Use</a></li>
-                        <li><a href="compliance.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">AML & KYC Policy</a></li>
-                        <li><a href="compliance.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">Risk Disclosure</a></li>
+                        <li><a href="compliance.html"
+                                style="color:#64748b; text-decoration:none; font-size:0.9rem;">Privacy Policy</a></li>
+                        <li><a href="compliance.html"
+                                style="color:#64748b; text-decoration:none; font-size:0.9rem;">Terms of Use</a></li>
+                        <li><a href="compliance.html" style="color:#64748b; text-decoration:none; font-size:0.9rem;">AML
+                                & KYC Policy</a></li>
+                        <li><a href="compliance.html"
+                                style="color:#64748b; text-decoration:none; font-size:0.9rem;">Risk Disclosure</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="container" style="border-top:1px solid #f1f5f9; padding-top: 1rem; text-align:center;">
-            <div class="footer-copy" style="font-size:0.85rem; color:#94a3b8;">&copy; 2026 Veyronyx Innovation Capital. All Rights Reserved. Not a solicitation for securities.</div>
+            <div class="footer-copy" style="font-size:0.85rem; color:#94a3b8;">&copy; 2026 Veyronyx Innovation Capital.
+                All Rights Reserved. Not a solicitation for securities.</div>
         </div>
     </footer>
 
     <script src="script.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const leftCol = document.getElementById('col-left');
             const rightCol = document.getElementById('col-right');
 
@@ -265,7 +336,7 @@
                 "Investment Instrument Analyst", "Investment Research Automation Analyst", "Head of AI Tools for Investment Research", "Global Market Researcher",
                 "International Investment Analyst", "Cross-border Investment Researcher", "Emerging Markets Analyst", "Strategic Investment Researcher",
                 "Investment Trend Researcher", "Researcher in Innovative Models", "Long-term Value Researcher", "Special Project Researcher",
-                "Investment Research Platform Manager", "Investment Research Director"
+                "Investment Research Platform Manager", "Investment Research Director", "Venture Capital Partner", "Managing Director"
             ];
 
             let leftHtml = '';
@@ -279,6 +350,72 @@
                     title = "Investment Professional";
                 }
 
+                // Unique deterministic generator for each role based on title hash
+                let overview, res1, res2, res3, style;
+                switch (title) {
+                    case "Investment Analyst": overview = "Executes fundamental analysis and prepares comprehensive investment memos."; res1 = "Conduct financial modeling of early-stage startups."; res2 = "Assess team capabilities and go-to-market strategies."; res3 = "Monitor industry trends to keep partners informed."; style = "Detail-oriented, data-driven, and highly analytical."; break;
+                    case "Senior Investment Analyst": overview = "Leads execution of complex deals and serves as a mentor to junior analysts."; res1 = "Drive complete end-to-end due diligence processes."; res2 = "Draft investment theses and structure term sheets."; res3 = "Maintain networks of co-investors."; style = "Authoritative, highly networked, and strategically minded."; break;
+                    case "Junior Investment Analyst": overview = "Assists the core investment team in data collection and report drafting."; res1 = "Screen inbound pitch decks against firm criteria."; res2 = "Compile competitor analysis for senior staff."; res3 = "Maintain internal CRM dashboards."; style = "Eager to learn, meticulously organized, and collaborative."; break;
+                    case "Investment Research Assistant": overview = "Provides research support by cataloging data room documents."; res1 = "Organize digital folders and handle data requests."; res2 = "Scrape public databases for initial market sizing."; res3 = "Assist in formatting committee slide decks."; style = "Highly structured, efficient, and supportive."; break;
+                    case "Industry Research Analyst": overview = "Focuses deeply on specific verticals to understand supply chains and incumbents."; res1 = "Publish specialized quarterly reports on assigned sectors."; res2 = "Track patent filings and regulatory shifts."; res3 = "Liaise with industry operators to gather intelligence."; style = "Deeply knowledgeable, inquisitive, and thorough."; break;
+                    case "Macro Research Analyst": overview = "Studies large-scale economic trends affecting interest rates and liquidity."; res1 = "Model macroeconomic impacts on venture valuations."; res2 = "Monitor federal reserve policies and global tariffs."; res3 = "Advise the committee on capital deployment timing."; style = "Macro-focused, highly numerical, and globally aware."; break;
+                    case "Researcher in the Technology Industry": overview = "Monitors software development, semiconductors, and tech ecosystems."; res1 = "Evaluate technical debt and architecture of prospective platforms."; res2 = "Trace historical tech adoption cycles."; res3 = "Interview lead engineers at target companies."; style = "Engineering-minded, objective, and continuously learning."; break;
+                    case "AI Investment Researcher": overview = "Specializes exclusively in artificial intelligence models and ML infrastructure."; res1 = "Audit neural network architectures and dataset qualities."; res2 = "Project compute costs and cloud infrastructure needs."; res3 = "Establish ties within academic AI labs."; style = "Forward-thinking, academically rigorous, and technical."; break;
+                    case "Fintech Researcher": overview = "Analyzes innovations in payments, DeFi, and neo-banking."; res1 = "Assess payment gateways and KYC pipelines."; res2 = "Track shifts in consumer finance behaviors."; res3 = "Verify compliance with global financial regulatory bodies."; style = "Financially astute, precise, and regulation-conscious."; break;
+                    case "Medical Researcher": overview = "Evaluates health-tech, biotech, and pharmaceuticals for clinical viability."; res1 = "Review FDA approval stages and clinical trial results."; res2 = "Estimate addressable patient populations for new therapies."; res3 = "Consult with medical boards and chief medical officers."; style = "Scientifically rigorous, ethical, and patient-focused."; break;
+                    case "New Energy Industry Researcher": overview = "Focuses on clean-tech, renewable infrastructures, and power grids."; res1 = "Analyze battery storage capacities and grid integrations."; res2 = "Evaluate carbon credit economies and green subsidies."; res3 = "Source deals in sustainable manufacturing sectors."; style = "Pragmatic, environmentally aware, and industrial-minded."; break;
+                    case "Web3 Investment Analyst": overview = "Investigates decentralized platforms, token launches, and on-chain governance."; res1 = "Conduct deep-dives into tokenomics and vesting schedules."; res2 = "Monitor blockchain scalability solutions."; res3 = "Engage with DAOs and open-source communities."; style = "Crypto-native, adaptable, and forward-looking."; break;
+                    case "Blockchain Researcher": overview = "Examines blockchain infrastructure, cryptography, and logic implementations."; res1 = "Audit smart contract security and protocol robustness."; res2 = "Track layer-2 adoption rates and gas fee trends."; res3 = "Liaise with core protocol developers."; style = "Extremely technical, cryptographic, and detail-oriented."; break;
+                    case "Consumer Technology Researcher": overview = "Studies consumer behavior, social platforms, and B2C hardware."; res1 = "Calculate customer acquisition costs and lifetime value."; res2 = "Identify viral growth loops and retention rates."; res3 = "Test early beta products to gauge user experience."; style = "Trend-savvy, user-empathetic, and culturally attuned."; break;
+                    case "Enterprise Services Researcher": overview = "Evaluates B2B software, SaaS models, cloud security, and dev tools."; res1 = "Measure net revenue retention and enterprise sales cycles."; res2 = "Analyze pricing tiers and up-sell trajectories."; res3 = "Interview Chief Information Officers for feedback."; style = "Metric-driven, logical, and business-oriented."; break;
+                    case "Quantitative Investment Analyst": overview = "Uses data science to back-test investment theories and optimize risk."; res1 = "Construct algorithms to detect historical correlations."; res2 = "Manage complex statistical simulations."; res3 = "Identify alpha signals from unstructured data."; style = "Highly mathematical, methodical, and unemotional."; break;
+                    case "Investment Model Analyst": overview = "Focuses entirely on building intricate financial projections."; res1 = "Run Monte Carlo simulations for exit scenarios."; res2 = "Stress-test startup revenue assumptions."; res3 = "Build proprietary internal valuation databases."; style = "Spreadsheet-fluent, meticulous, and analytical."; break;
+                    case "Fund Research Analyst": overview = "Analyzes the overall performance of the venture fund compared to market indices."; res1 = "Track internal rate of return across fund vintages."; res2 = "Produce quarterly LP reporting documents."; res3 = "Benchmark portfolio milestones against competitors."; style = "Process-driven, transparent, and highly organized."; break;
+                    case "Investment Strategy Analyst": overview = "Designs high-level venture mandates regarding sectors to deploy capital."; res1 = "Draft annual firm investment theses."; res2 = "Identify blind spots in current portfolio allocation."; res3 = "Pitch new geographic strategies to partners."; style = "Visionary, articulate, and big-picture oriented."; break;
+                    case "Portfolio Analyst": overview = "Keeps a close watch on existing portfolio companies to track growth runway."; res1 = "Gather monthly financials from all founders."; res2 = "Identify companies needing bridge rounds."; res3 = "Provide strategic guidance during pivot phases."; style = "Supportive, relationship-driven, and vigilant."; break;
+                    case "Investment Due Diligence Specialist": overview = "Conducts exhausting audits on target investments before final terms."; res1 = "Review vendor contracts and employment agreements."; res2 = "Cross-check founder references and past performance."; res3 = "Flag critical legal or operational risks."; style = "Incredibly thorough, skeptical, and diligent."; break;
+                    case "Business Model Analyst": overview = "Deconstructs how prospective companies plan to scale sustainably."; res1 = "Analyze unit economics, gross margins, and supply costs."; res2 = "Map out multi-sided marketplace dynamics."; res3 = "Compare pricing strategies against incumbents."; style = "Commercially aware, critical, and logic-driven."; break;
+                    case "Market Size Analyst": overview = "Calculates total addressable markets precisely."; res1 = "Perform bottom-up and top-down market triangulations."; res2 = "Aggregate massive raw industry reports."; res3 = "Validate startup growth ceilings."; style = "Data-hungry, precise, and objective."; break;
+                    case "Competitive Landscape Analyst": overview = "Maps out rival companies and indirect threats to prospective investments."; res1 = "Produce feature-by-feature competitor matrices."; res2 = "Trace funding histories of rival startups."; res3 = "Identify moats and defensibility traits."; style = "Strategic, hyper-aware, and tactically minded."; break;
+                    case "Valuation Analyst": overview = "Specializes in pricing equity using standard financial metrics."; res1 = "Apply discounted cash flow and comparable multiples."; res2 = "Evaluate the impact of liquidation preferences."; res3 = "Advise on optimal pre-money valuations."; style = "Financially uncompromising, sharp, and confident."; break;
+                    case "M&A Analyst": overview = "Manages processes for when portfolio firms merge or get acquired."; res1 = "Identify potential strategic acquirers for startups."; res2 = "Draft confidential information memorandums."; res3 = "Model synergies and payout waterfalls for exits."; style = "Deal-focused, communicative, and persistent."; break;
+                    case "Pre-IPO Investment Analyst": overview = "Evaluates late-stage, mature startups preparing to go public."; res1 = "Review S-1 filings and IPO readiness metrics."; res2 = "Liaise with banks on public market appetite."; res3 = "Ensure portfolio companies meet reporting standards."; style = "Corporate-minded, highly experienced, and polished."; break;
+                    case "Early Project Analyst": overview = "Focuses on pre-seed and seed stage companies with unproven ideas."; res1 = "Evaluate founder traits, resilience, and vision."; res2 = "Assess minimum viable products in alpha stages."; res3 = "Help incubate ideas from university labs."; style = "High-risk tolerant, imaginative, and founder-friendly."; break;
+                    case "Growth Project Analyst": overview = "Analyzes Series B and C stage investments where scaling is the objective."; res1 = "Audit hyper-growth sales engines and marketing ROIs."; res2 = "Evaluate international expansion roadmaps."; res3 = "Connect founders with elite global recruiters."; style = "Scale-oriented, aggressive, and highly connected."; break;
+                    case "Risk Assessment Analyst": overview = "Identifies systemic vulnerabilities within the portfolio."; res1 = "Quantify downside risks on every major term sheet."; res2 = "Run stress scenarios on cash burn rates."; res3 = "Advise on macro portfolio diversification."; style = "Cautious, deeply analytical, and protective."; break;
+                    case "Investment Research Data Analyst": overview = "Manages data ingestion pipelines to scrape alt-data for deal sourcing."; res1 = "Write scripts to monitor GitHub repos for rising projects."; res2 = "Track LinkedIn job changes for stealth startups."; res3 = "Surface statistically significant deal flow."; style = "Highly technical, programming-proficient, and innovative."; break;
+                    case "Investment Database Administrator": overview = "Maintains the internal CRM and proprietary record systems."; res1 = "Ensure data cleanliness and schema integrity."; res2 = "Manage access controls for external LPs."; res3 = "Integrate third-party APIs into the firm stack."; style = "Systematic, reliable, and infrastructure-focused."; break;
+                    case "Investment Research Content Editor": overview = "Transforms complex technical research into digestible content."; res1 = "Edit weekly newsletters and macroeconomic teardowns."; res2 = "Manage the firm's outward facing blog releases."; res3 = "Ensure brand voice consistency across all reports."; style = "Articulate, creative, and detail-oriented."; break;
+                    case "Investment White Paper Researcher": overview = "Authors long-form, academic-level papers on technological trends."; res1 = "Conduct deep primary literature reviews."; res2 = "Publish papers defining the firm's core thesis."; res3 = "Present findings at elite industry summits."; style = "Thoughtful, academic, and highly communicative."; break;
+                    case "Investment Report Writer": overview = "Drafts formal investment memos and post-deal summaries."; res1 = "Synthesize hundreds of pages of diligence."; res2 = "Take structured notes during partner IC meetings."; res3 = "Produce retrospective reports on failed deals."; style = "Concise, extremely fast-paced, and accurate."; break;
+                    case "Startup Research Consultant": overview = "An external expert called upon when reviewing highly niche startups."; res1 = "Provide ad-hoc analysis on deeply technical systems."; res2 = "Validate commercial claims made by founders."; res3 = "Conduct short-term market scans for IC context."; style = "Expert-level, pragmatic, and highly specialized."; break;
+                    case "Industrial Research Consultant": overview = "Applies deep knowledge of manufacturing to investment decisions."; res1 = "Audit global supply chain dependencies."; res2 = "Assess warehouse automation and robotic efficiency."; res3 = "Connect startups with overseas manufacturing lines."; style = "Industrially literate, practical, and globally networked."; break;
+                    case "External Industry Consultant": overview = "A contracted veteran providing tier-1 advice on a pending deal."; res1 = "Serve as a devil's advocate during committee votes."; res2 = "Lean on decades of personal experience to vet deals."; res3 = "Provide an external rating on founder competency."; style = "Unbiased, experienced, and highly valuable."; break;
+                    case "Investment Intern": overview = "A temporary role to learn the ropes while supporting day-to-day work."; res1 = "Complete ad-hoc data entry and formatting tasks."; res2 = "Sit in on founder pitches for educational purposes."; res3 = "Compile weekly news digests for the broader team."; style = "Enthusiastic, eager to learn, and highly adaptable."; break;
+                    case "Research Intern": overview = "Focuses on gathering specific deep-dive information requested by Analysts."; res1 = "Spend hours aggregating fragmented industry data."; res2 = "Build exhaustive lists of competitors and funding."; res3 = "Create visualizations for final review memos."; style = "Diligent, incredibly focused, and resourceful."; break;
+                    case "Investment Project Coordinator": overview = "Ensures the deal process flows smoothly from initial contact to wire."; res1 = "Schedule complex multi-party due diligence calls."; res2 = "Liaise with legal counsel to track document signing."; res3 = "Ensure compliance checks are completed swiftly."; style = "Exceptionally organized, punctual, and communicative."; break;
+                    case "Investment Process Specialist": overview = "Optimizes the internal operations of the venture firm itself."; res1 = "Implement software protocols to speed up deal reviews."; res2 = "Streamline the LP reporting pipelines for efficiency."; res3 = "Audit internal communication inefficiencies."; style = "Process-oriented, highly logical, and operational."; break;
+                    case "Investment Information Management Specialist": overview = "Ensures all intellectual property and sensitive internal docs are safe."; res1 = "Manage strict permissions for internal databases."; res2 = "Classify and archive past confidential deal documents."; res3 = "Enforce digital security protocols across the firm."; style = "Security-minded, meticulous, and accountable."; break;
+                    case "Investment Research System Product Manager": overview = "Builds custom internal software tools tailored for the firm."; res1 = "Act as product owner for proprietary deal-flow apps."; res2 = "Run agile sprints with internal engineering teams."; res3 = "Gather feedback from analysts to improve UI."; style = "Product-driven, technical, and user-empathetic."; break;
+                    case "Investment Instrument Analyst": overview = "Analyzes non-standard venture deals, like convertible notes and warrants."; res1 = "Model the dilution impact of complex convertibles."; res2 = "Advise on optimal debt-to-equity structuring."; res3 = "Ensure legal compliance of novel funding mechanisms."; style = "Financially creative, legally literate, and rigorous."; break;
+                    case "Investment Research Automation Analyst": overview = "Uses scripts and RPA tools to automate repetitive tasks for the team."; res1 = "Automate web scraping of target startup metrics."; res2 = "Build auto-updating dashboards for KPI tracking."; res3 = "Train analysts on efficient digital workflows."; style = "Efficiency-obsessed, highly technical, and innovative."; break;
+                    case "Head of AI Tools for Investment Research": overview = "Directs the implementation of AI across the firm's internal mechanics."; res1 = "Train proprietary LLMs on past firm investment data."; res2 = "Deploy AI agents to conduct preliminary startup screens."; res3 = "Evaluate the data security risks of internal AI usage."; style = "Visionary, technically elite, and transformative."; break;
+                    case "Global Market Researcher": overview = "Scans international markets for thematic shifts before they're mainstream."; res1 = "Travel globally to identify burgeoning tech hubs."; res2 = "Compile reports on shifting consumer habits in APAC/EMEA."; res3 = "Bridge cultural gaps for massive cross-border investments."; style = "Culturally fluent, globally mobile, and highly observant."; break;
+                    case "International Investment Analyst": overview = "Focuses on deploying capital specifically into foreign jurisdictions."; res1 = "Navigate foreign direct investment (FDI) laws."; res2 = "Build relationships with overseas local VCs for syndication."; res3 = "Assess geopolitical risks for foreign startup growth."; style = "Diplomatic, legally astute, and globally connected."; break;
+                    case "Cross-border Investment Researcher": overview = "Investigates how domestic technologies can be exported overseas."; res1 = "Model supply chain localization requirements."; res2 = "Audit intellectual property protections in target nations."; res3 = "Connect domestic founders with international distribution channels."; style = "Strategically expansive, highly organized, and communicative."; break;
+                    case "Emerging Markets Analyst": overview = "Zeroes in on early-stage opportunities in developing nations."; res1 = "Evaluate infrastructure leaps in emerging economies."; res2 = "Assess currency devaluation risks on return multiples."; res3 = "Partner with local government enterprise initiatives."; style = "Risk-tolerant, culturally aware, and highly analytical."; break;
+                    case "Strategic Investment Researcher": overview = "Builds holistic frameworks for firm-wide investment direction."; res1 = "Analyze intersectional trends between tech and finance."; res2 = "Draft policy documents for the executive partnership."; res3 = "Help direct the macroeconomic deployment of the fund."; style = "Holistic, top-down thinker, and analytically supreme."; break;
+                    case "Investment Trend Researcher": overview = "Forecasts behavioral and technological shifts across the next five years."; res1 = "Plot the convergence of disparate tech sectors."; res2 = "Present wild-card technological scenarios to the partnership."; res3 = "Consume fringe cultural content to spot underground trends."; style = "Imaginative, unconventional, and deeply insightful."; break;
+                    case "Researcher in Innovative Models": overview = "Evaluates entirely new ways of doing business, such as DAO structures."; res1 = "Audit non-traditional monetization mechanisms."; res2 = "Assess the legal viability of novel incorporation types."; res3 = "Help founders transition to sustainable models."; style = "Unorthodox, highly creative, and adaptable."; break;
+                    case "Long-term Value Researcher": overview = "Aims for highly convicted plays that may take a decade to mature."; res1 = "Model 10-year market penetration trajectories."; res2 = "Protect capital allocations for long-tail disruptions."; res3 = "Draft visionary memos to convince skeptical LPs."; style = "Patient, utterly convinced, and visionary."; break;
+                    case "Special Project Researcher": overview = "An elite operative deployed to investigate highly secretive deals."; res1 = "Execute deep cover due diligence on stealth competitors."; res2 = "Operate under strict non-disclosure parameters for the firm."; res3 = "Liaise exclusively with the managing partners on special ops."; style = "Discreet, immensely trusted, and fiercely loyal."; break;
+                    case "Investment Research Platform Manager": overview = "Manages the entirety of the firm's SaaS stack and data subscriptions."; res1 = "Negotiate vendor contracts for data providers like Pitchbook."; res2 = "Ensure seamless integration between various platforms."; res3 = "Monitor software utilization metrics across the team."; style = "Fiscally responsible, technically competent, and organized."; break;
+                    case "Investment Research Director": overview = "Oversees the entire intelligence apparatus of the venture firm."; res1 = "Set the quarterly research priorities for the entire staff."; res2 = "Edit and finalize the firm's state-of-the-market reports."; res3 = "Hire, train, and mentor top-tier research talent."; style = "Authoritative, intellectually elite, and commanding."; break;
+                    case "Venture Capital Partner": overview = "Senior leader responsible for final capital deployment and managing the fund's holistic portfolio."; res1 = "Lead the firm's investment committee to authorize new startup investments."; res2 = "Serve on the board of directors for flagship portfolio companies."; res3 = "Drive firm-level fundraising efforts by pitching to institutional LPs."; style = "Extremely experienced, highly connected, and decisive."; break;
+                    case "Managing Director": overview = "The executive operational head of the firm overseeing all departments and multi-fund strategies."; res1 = "Establish the macro thesis for sequential multi-billion dollar venture funds."; res2 = "Oversee legal, compliance, research, and investment teams at an executive level."; res3 = "Build relationships with sovereign wealth funds and ultra-high net worth individuals."; style = "Executive-level, strategic powerhouse, and visionary."; break;
+                    default: overview = `General intelligence role operating as a ${title}.`; res1 = `Execute the core duties of a ${title}.`; res2 = "Perform ad-hoc market analysis as directed by the fund."; res3 = "Ensure diligence standards are flawlessly met."; style = "Professional, eager, and highly adaptable."; break;
+                }
+
                 const html = `
                     <div class="role-acc-item">
                         <button class="role-acc-btn">Position ${i}: ${title} <i class="fas fa-chevron-right"></i></button>
@@ -286,16 +423,16 @@
                             <div class="role-content-inner">
                                 <p class="acc-subtitle">Position ${i}: ${title}</p>
                                 <h4>Position Overview</h4>
-                                <p>Conducts rigorous due diligence, financial modeling, and deeply analytical industry research.</p>
+                                <p>${overview}</p>
                                 <h4>Key Responsibilities</h4>
                                 <ul>
-                                    <li>Evaluate and present transformative investment opportunities to the investment committee.</li>
-                                    <li>Monitor portfolio performance and track emerging macro-economic trends.</li>
-                                    <li>Build strong relationships with visionary founders and institutional partners.</li>
+                                    <li>${res1}</li>
+                                    <li>${res2}</li>
+                                    <li>${res3}</li>
                                 </ul>
                                 <h4>Working Style</h4>
                                 <ul>
-                                    <li>Execution-focused, highly analytical, and globally minded.</li>
+                                    <li>${style}</li>
                                 </ul>
                             </div>
                         </div>
@@ -314,8 +451,8 @@
 
             setTimeout(() => {
                 var acc = document.querySelectorAll(".role-acc-btn");
-                acc.forEach(function(btn) {
-                    btn.addEventListener("click", function() {
+                acc.forEach(function (btn) {
+                    btn.addEventListener("click", function () {
                         this.classList.toggle("active");
                         var panel = this.nextElementSibling;
                         if (panel.style.maxHeight) {
@@ -331,11 +468,5 @@
         });
     </script>
 </body>
+
 </html>
-
-
-
-
-
-
-
